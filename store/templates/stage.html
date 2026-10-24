@@ -1,0 +1,18 @@
+<!doctype html>
+<!--
+  Renders the Chrome Web Store images with the extension's real overlay and popup code.
+  Open with ?scene=overlay|compact|wrapup|setup|promo-small|promo-marquee.
+  `npm run store-assets` serves the repo over HTTP and captures every scene with headless Chrome.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meeting Timer Overlay store images</title>
+    <link rel="stylesheet" href="stage.css" />
+  </head>
+  <body>
+    <script src="../../extension/src/schedule.js"></script>
+    <script src="../../extension/src/overlay.js"></script>
+    <script src="stage.js"></script>
+  </body>
+</html>

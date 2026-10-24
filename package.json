@@ -1,0 +1,16 @@
+{
+  "name": "meeting-timer-overlay",
+  "private": true,
+  "description": "A calm, fair turn timer and speaker queue overlay for Google Slides meetings (Chrome extension).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "icons": "node scripts/make-icons.mjs",
+    "store-assets": "node scripts/store-assets.mjs",
+    "check": "npm test && npm run build"
+  }
+}

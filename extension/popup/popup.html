@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meeting Timer Overlay</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="top">
+      <h1>Meeting timer</h1>
+      <p class="deck-title" id="deck-title"></p>
+    </header>
+
+    <section class="panel" id="active-panel" hidden>
+      <div class="active-line">
+        <span class="live-dot"></span>
+        <span id="active-summary"></span>
+      </div>
+      <div class="buttons">
+        <button type="button" id="next-button">Next section</button>
+        <button type="button" id="hide-button">Hide overlay</button>
+        <button type="button" id="stop-button" class="danger">Stop</button>
+      </div>
+    </section>
+
+    <p class="notice" id="not-slides" hidden>
+      Open a Google Slides presentation in this tab (edit view) to set up a session.
+    </p>
+
+    <main id="setup" hidden>
+      <section class="panel times">
+        <label>Start <input type="time" id="start-input" required /></label>
+        <label>
+          Duration (min)
+          <input type="number" id="duration-input" min="1" max="600" step="1" required />
+        </label>
+      </section>
+
+      <section class="panel">
+        <div class="row-head">
+          <h2>Sections</h2>
+          <button type="button" id="scan-button">Scan deck</button>
+        </div>
+        <p class="hint" id="scan-status">
+          Scan the deck, then tick the slide where each section (team member) starts.
+        </p>
+        <div class="bulk" id="bulk-actions" hidden>
+          <button type="button" class="link" id="select-all-button">Select all</button>
+          <button type="button" class="link" id="select-none-button">Select none</button>
+        </div>
+        <ol class="slides" id="slide-list"></ol>
+        <button type="button" class="link" id="add-button">+ Add a section manually</button>
+      </section>
+
+      <p class="summary" id="summary"></p>
+      <p class="error" id="error" role="alert"></p>
+      <button type="button" class="primary" id="start-button">Start session</button>
+    </main>
+
+    <script src="../src/schedule.js"></script>
+    <script src="../src/slide_dom.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
