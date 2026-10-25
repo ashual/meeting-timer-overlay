@@ -2,7 +2,10 @@
 
 Drafts only. Nothing in this folder has been published or sent. Confirm account eligibility
 and channel rules at publication time. Replace personal statements or placeholders as needed.
-Use the existing repository and install links until the project website is publicly live.
+The original four-page project site is live. The demo and meeting agenda are prepared in
+the follow-up PR; use their links only after it is merged and Pages deploys.
+See `distribution-queue.md` for researched routes and updated submission fields, and
+`search-visibility.md` for the account-dependent indexing steps.
 
 ## GitHub About
 

@@ -16,7 +16,7 @@ for (const name of pages) {
   assert.ok(html.includes(`<link rel="canonical" href="${expected}">`), `${name}: canonical`);
   assert.ok(html.includes(`<meta property="og:url" content="${expected}">`), `${name}: Open Graph URL`);
   urls.push(expected);
-  for (const m of html.matchAll(/<(?:a|link|img)\b[^>]*(?:href|src)="([^"]+)"/g)) {
+  for (const m of html.matchAll(/<(?:a|link|img|script)\b[^>]*(?:href|src)="([^"]+)"/g)) {
     const ref = m[1];
     if (/^(?:https?:|mailto:|#)/.test(ref)) continue;
     const file = path.resolve(root, ref.split('#')[0]);
@@ -26,6 +26,7 @@ for (const name of pages) {
   for (const m of html.matchAll(/<img\b([^>]+)>/g)) assert.match(m[1], /\balt="[^"]*"/);
 }
 const home = await readFile(path.join(root, 'index.html'), 'utf8');
+assert.equal(await readFile(path.join(root, 'timer-model.js'), 'utf8'), await readFile('extension/src/schedule.js', 'utf8'), 'demo model must match the extension; copy extension/src/schedule.js to docs/timer-model.js after schedule changes');
 const schema = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 assert.equal(schema['@type'], 'SoftwareApplication');
 assert.equal(schema.offers.price, '0');
