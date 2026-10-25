@@ -22,8 +22,7 @@ who's up, so the whole room can see whose turn it is and how much time is left.
 - **A calm countdown** in whole minutes. No seconds tick, so it never feels like an alarm.
 - **Every section in slide order.** Finished sections are checked, the current one is
   highlighted with an arrow, and upcoming ones wait. The card also says how many are left.
-- **A gentle limit.** When a turn runs out, the card turns amber and says "Wrap up" instead of
-  counting into negatives.
+- **A gentle limit.** When a turn runs out, the card turns amber and says "Wrap up". More than a minute over, it counts those minutes with a minus sign, in red, and the number fades slowly in and out.
 - **Stays out of the way.** After 5 seconds without a slide change, the card shrinks to a slim
   strip with the minutes, the sections left, and one dot per section. The next slide change
   brings the full card back.
@@ -80,9 +79,10 @@ unzip it, and load the unzipped folder the same way.
    **+ Add a section manually**.
 4. Set the meeting's start time and duration in minutes, then click **Start session**. The
    toolbar icon shows an `ON` badge.
-5. Present as usual. The next turn starts when you reach the next ticked slide. Going back, or
-   moving through a section's other slides, never restarts a turn. Jumping ahead marks the
-   skipped sections as done.
+5. Present as usual. The next turn starts when you reach the next ticked slide. Moving back
+   through slides, or through a section's other slides, leaves the current turn as it is.
+   Jumping ahead marks the skipped sections as done. `Alt+Shift+P` returns to the previous
+   section and splits the time still left among the sections from that one on.
 6. Click **Stop** in the popup when you're done. The overlay disappears.
 
 The setup (ticks, names, start time, and duration) is saved per presentation, so next week you
@@ -93,10 +93,11 @@ only rescan and adjust. Rescanning keeps your ticks and edited names, matched by
 These work while the slides have focus, including in fullscreen. Change them at
 `chrome://extensions/shortcuts`.
 
-| Shortcut      | Action                                |
-| ------------- | ------------------------------------- |
-| `Alt+Shift+N` | Advance to the next section manually  |
-| `Alt+Shift+O` | Show or hide the overlay              |
+| Shortcut      | Action                                                        |
+| ------------- | ------------------------------------------------------------- |
+| `Alt+Shift+N` | Advance to the next section manually                          |
+| `Alt+Shift+P` | Return to the previous section and recalculate the time left |
+| `Alt+Shift+O` | Show or hide the overlay                                      |
 
 The popup offers the same controls, plus **Stop**.
 
@@ -153,7 +154,7 @@ structure:
 - Speaker-notes (Presenter view) windows are ignored on purpose. The overlay appears on the
   audience-facing slideshow.
 - If Google changes its markup, scanning fails with a message. You can still add sections
-  manually and advance turns with `Alt+Shift+N`.
+  manually and move turns with `Alt+Shift+N` and `Alt+Shift+P`.
 
 ## Development
 

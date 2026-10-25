@@ -83,6 +83,35 @@ test("backward navigation and revisiting the current section keep the allocation
   assert.equal(schedule.startTurn(session, -1, START + 3 * MINUTE), session);
 });
 
+test("returning to the previous section recalculates the time still left", () => {
+  let session = schedule.startTurn(makeSession(), 0, START);
+  session = schedule.startTurn(session, 1, START + 2 * MINUTE);
+  assert.equal(session.deadlineMs - session.turnStartMs, 5 * MINUTE);
+
+  const back = schedule.previousTurn(session, START + 3 * MINUTE);
+  assert.equal(back.position, 0);
+  assert.equal(back.turnStartMs, START + 3 * MINUTE);
+  assert.equal(back.deadlineMs - back.turnStartMs, (19 * MINUTE) / 5);
+  assert.deepEqual(
+    schedule.view(back, START + 3 * MINUTE).items.map((item) => item.state),
+    ["current", "upcoming", "upcoming", "upcoming", "upcoming"],
+  );
+
+  assert.equal(schedule.previousTurn(back, START + 4 * MINUTE), back);
+  const waiting = makeSession();
+  assert.equal(schedule.previousTurn(waiting, START), waiting);
+});
+
+test("returning from a finished session reopens the last section", () => {
+  let session = schedule.startTurn(makeSession(), 4, START);
+  session = schedule.startTurn(session, 5, START + MINUTE);
+  const back = schedule.previousTurn(session, START + 2 * MINUTE);
+  assert.equal(back.position, 4);
+  assert.equal(back.turnStartMs, START + 2 * MINUTE);
+  assert.equal(back.deadlineMs - back.turnStartMs, 20 * MINUTE);
+  assert.equal(schedule.view(back, START + 2 * MINUTE).phase, "running");
+});
+
 test("skipping sections marks them presented and shares time among the rest", () => {
   const session = schedule.startTurn(makeSession(), 2, START + 4 * MINUTE);
   assert.equal(session.deadlineMs - session.turnStartMs, 6 * MINUTE);
@@ -114,6 +143,12 @@ test("view shows whole minutes, a calm sub-minute state, and wrap up", () => {
 
   const wrapup = schedule.view(session, START + 5 * MINUTE);
   assert.deepEqual([wrapup.phase, wrapup.big, wrapup.progress], ["wrapup", "Wrap up", 1]);
+  assert.equal(schedule.view(session, session.deadlineMs + MINUTE).phase, "wrapup");
+
+  const over = schedule.view(session, session.deadlineMs + MINUTE + 1);
+  assert.deepEqual([over.phase, over.big, over.unit, over.compact.value, over.progress], ["over", "-1", "min", "-1", 1]);
+  assert.equal(schedule.view(session, session.deadlineMs + 1.6 * MINUTE).big, "-1");
+  assert.equal(schedule.view(session, session.deadlineMs + 2 * MINUTE).big, "-2");
 });
 
 test("the compact view keeps the minutes and the sections left in short form", () => {
@@ -124,6 +159,7 @@ test("the compact view keeps the minutes and the sections left in short form", (
   assert.deepEqual(schedule.view(session, START + 2 * MINUTE).compact, { value: "5", unit: "min", caption: "4 left" });
   assert.deepEqual(schedule.view(session, START + 6.5 * MINUTE).compact, { value: "<1", unit: "min", caption: "4 left" });
   assert.deepEqual(schedule.view(session, START + 8 * MINUTE).compact, { value: "0", unit: "min", caption: "4 left" });
+  assert.deepEqual(schedule.view(session, START + 9 * MINUTE).compact, { value: "-2", unit: "min", caption: "4 left" });
 
   const done = schedule.startTurn(session, 5, START + 8 * MINUTE);
   assert.deepEqual(schedule.view(done, START + 8 * MINUTE).compact, { value: "\u2713", unit: "", caption: "done" });

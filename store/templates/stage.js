@@ -201,7 +201,7 @@
     compact: () =>
       slideshow("Lena", sessionAt(2, 0.5, 19.5), "After a few quiet seconds it shrinks out of the way", { compact: true }),
     wrapup: () =>
-      slideshow("Omar", sessionAt(3, 8, 4), "When a turn runs out it turns a calm amber, never red", { compact: false }),
+      slideshow("Omar", sessionAt(3, 5, 4), "When a turn runs out it turns a calm amber and says Wrap up", { compact: false }),
     setup,
     "promo-small": promoSmall,
     "promo-marquee": promoMarquee,

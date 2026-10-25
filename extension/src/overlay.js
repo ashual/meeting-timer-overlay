@@ -20,6 +20,7 @@
       --muted: rgba(238, 243, 249, 0.66);
       --accent: #2dd4bf;
       --warm: #f6c177;
+      --alert: #ff5c5c;
       --surface: rgba(8, 18, 32, 0.6);
       --row-h: 30px;
       --ring: clamp(28px, 2.3vw, 38px);
@@ -74,9 +75,12 @@
       transition: color 600ms ease;
     }
     .big.tick { animation: tick 380ms ease; }
-    .unit { font-size: clamp(11px, 0.8vw, 14px); color: var(--muted); }
+    .unit { font-size: clamp(11px, 0.8vw, 14px); color: var(--muted); transition: color 600ms ease; }
     .caption { margin-top: 2px; font-size: clamp(10.5px, 0.72vw, 12.5px); color: var(--muted); }
     .card[data-phase="wrapup"] .big { color: var(--warm); }
+    .card[data-phase="over"] .big,
+    .card[data-phase="over"] .unit { color: var(--alert); }
+    .card[data-phase="over"]:not(.compact) .time { animation: count-fade 12s ease-in-out infinite; }
 
     .dial-wrap { flex: none; display: flex; flex-direction: column; align-items: center; }
     .dial {
@@ -107,8 +111,11 @@
       transition: color 600ms ease;
     }
     .dial-value.tick { animation: tick 380ms ease; }
-    .dial-unit { margin-top: 1px; font-size: calc(var(--ring) * 0.2); color: var(--muted); }
+    .dial-unit { margin-top: 1px; font-size: calc(var(--ring) * 0.2); color: var(--muted); transition: color 600ms ease; }
     .card[data-phase="wrapup"] .dial-value { color: var(--warm); }
+    .card[data-phase="over"] .dial-value,
+    .card[data-phase="over"] .dial-unit { color: var(--alert); }
+    .card.compact[data-phase="over"] .dial-text { animation: count-fade 12s ease-in-out infinite; }
     .dial-caption {
       max-height: 0;
       margin-top: 0;
@@ -129,6 +136,7 @@
       transition: stroke-dashoffset 1.2s cubic-bezier(0.4, 0, 0.2, 1), stroke 600ms ease;
     }
     .card[data-phase="wrapup"] .arc { stroke: var(--warm); filter: drop-shadow(0 0 3px rgba(246, 193, 119, 0.45)); }
+    .card[data-phase="over"] .arc { stroke: var(--alert); filter: drop-shadow(0 0 3px rgba(255, 92, 92, 0.45)); }
     .card[data-phase="done"] .arc { stroke: rgba(238, 243, 249, 0.4); filter: none; }
 
     .list { position: relative; }
@@ -158,6 +166,10 @@
     .card[data-phase="wrapup"] .pill {
       background: linear-gradient(90deg, rgba(217, 140, 50, 0.92), rgba(190, 118, 38, 0.9));
       box-shadow: 0 0 0 1px rgba(246, 193, 119, 0.35), 0 4px 16px rgba(217, 140, 50, 0.3);
+    }
+    .card[data-phase="over"] .pill {
+      background: linear-gradient(90deg, rgba(214, 64, 64, 0.95), rgba(176, 42, 42, 0.9));
+      box-shadow: 0 0 0 1px rgba(255, 92, 92, 0.4), 0 4px 16px rgba(214, 64, 64, 0.35);
     }
 
     ol { margin: 0; padding: 0; list-style: none; }
@@ -247,6 +259,10 @@
     @keyframes tick {
       from { opacity: 0.15; transform: translateY(3px); }
       to { opacity: 1; transform: none; }
+    }
+    @keyframes count-fade {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.15; }
     }
 
     @media (prefers-reduced-motion: reduce) {

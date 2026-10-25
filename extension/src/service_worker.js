@@ -7,6 +7,8 @@ chrome.commands.onCommand.addListener(async (command) => {
   if (!session) return;
   if (command === "next-section") {
     await chrome.storage.local.set({ session: schedule.startTurn(session, session.position + 1, Date.now()) });
+  } else if (command === "previous-section") {
+    await chrome.storage.local.set({ session: schedule.previousTurn(session, Date.now()) });
   } else if (command === "toggle-overlay") {
     await chrome.storage.local.set({ session: { ...session, hidden: !session.hidden } });
   }

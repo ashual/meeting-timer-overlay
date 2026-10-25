@@ -85,6 +85,7 @@
   }
 
   function bindSessionControls() {
+    $("previous-button").addEventListener("click", () => updateSession((s) => schedule.previousTurn(s, Date.now())));
     $("next-button").addEventListener("click", () => updateSession((s) => schedule.startTurn(s, s.position + 1, Date.now())));
     $("hide-button").addEventListener("click", () => updateSession((s) => ({ ...s, hidden: !s.hidden })));
     $("stop-button").addEventListener("click", () => chrome.storage.local.remove("session"));
@@ -267,6 +268,7 @@
     else status = `${sections[position].label} · ${sections.length - position} left`;
     $("active-summary").textContent = `${session.deckTitle}: ${status}`;
     $("hide-button").textContent = session.hidden ? "Show overlay" : "Hide overlay";
+    $("previous-button").disabled = position <= 0;
     $("next-button").disabled = position >= sections.length;
   }
 })();

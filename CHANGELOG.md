@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 (2026-10-25)
+
+- `Alt+Shift+P` returns to the previous section and splits the time still left across the
+  sections from that one onward. Moving back through slides still leaves the turn alone.
+
+## 1.1.0 (2026-10-25)
+
+- When a turn is more than a minute over, the counter shows those minutes with a minus sign,
+  in red, and fades slowly in and out. The first minute over still says "Wrap up".
+
 ## 1.0.0 (2026-10-24)
 
 First public release.

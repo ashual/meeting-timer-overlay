@@ -34,12 +34,12 @@ WHAT YOU SEE
 • A whole-minute countdown, with no seconds ticking, so it never feels stressful.
 • Every section in slide order: finished ones are checked, the current one is highlighted, and upcoming ones wait.
 • How many sections are left.
-• When a turn runs out, a calm amber "Wrap up" instead of negative numbers or red alarms.
+• When a turn runs out, a calm amber "Wrap up". More than a minute over, the extra minutes count with a minus sign, in red, fading slowly in and out.
 • After a few seconds without a slide change, the card shrinks to a slim strip with just the minutes, sections left, and progress dots. The next slide change brings it back.
 • A see-through design that stays readable on light, dark, or busy slides.
 
 IT FOLLOWS YOUR SLIDES
-You never touch the timer during the meeting. Tick the slide where each person's part starts; when you reach that slide, their turn begins. Detail slides in between belong to the current person, going back never restarts a turn, and jumping ahead marks skipped sections as done.
+You never touch the timer during the meeting. Tick the slide where each person's part starts; when you reach that slide, their turn begins. Detail slides in between belong to the current person, going back through slides leaves the turn as it is, and jumping ahead marks skipped sections as done. Alt+Shift+P returns to the previous section and recalculates the time left.
 
 SET UP IN UNDER A MINUTE
 1. Open your deck and click the extension icon.
@@ -51,7 +51,7 @@ Your setup is saved per presentation, so next week you just rescan and start.
 MADE FOR PRESENTING
 • The overlay never takes focus or clicks: keep clicking or using arrow keys to change slides.
 • Works in fullscreen slideshows.
-• Optional shortcuts: Alt+Shift+N advances to the next section, Alt+Shift+O shows or hides the overlay.
+• Optional shortcuts: Alt+Shift+N advances to the next section, Alt+Shift+P returns to the previous section and recalculates the time left, Alt+Shift+O shows or hides the overlay.
 
 PRIVATE BY DESIGN
 No accounts, no servers, no analytics. Your slide titles and settings stay in your browser. The extension only reads Google Slides pages you open.

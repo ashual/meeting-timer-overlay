@@ -50,17 +50,31 @@
     };
   }
 
+  function allocateTurn(session, position, now) {
+    const count = session.sections.length;
+    const turnStartMs = Math.max(now, session.startMs);
+    const budgetMs = Math.max(0, session.endMs - turnStartMs) / (count - position);
+    return { ...session, position, turnStartMs, deadlineMs: turnStartMs + budgetMs };
+  }
+
   // Each turn gets an equal share of the time that is actually left when it begins, so
   // early finishers donate time to the remaining sections and overruns are absorbed fairly.
+  // Slide changes only move forward; stepping back is a separate, manual action.
   function startTurn(session, position, now) {
     const count = session.sections.length;
     if (position <= session.position || session.position >= count) return session;
     if (position >= count) {
       return { ...session, position: count, turnStartMs: null, deadlineMs: null };
     }
-    const turnStartMs = Math.max(now, session.startMs);
-    const budgetMs = Math.max(0, session.endMs - turnStartMs) / (count - position);
-    return { ...session, position, turnStartMs, deadlineMs: turnStartMs + budgetMs };
+    return allocateTurn(session, position, now);
+  }
+
+  // The manual return: the previous section starts again now, and everyone from there to
+  // the end shares whatever meeting time is still left.
+  function previousTurn(session, now) {
+    const position = Math.min(session.position, session.sections.length) - 1;
+    if (position < 0) return session;
+    return allocateTurn(session, position, now);
   }
 
   function formatClock(ms) {
@@ -124,6 +138,20 @@
     const totalMs = session.deadlineMs - session.turnStartMs;
     const remainingMs = session.deadlineMs - turnNow;
     if (remainingMs <= 0) {
+      const overMs = -remainingMs;
+      // The first minute over stays a calm "Wrap up". Past that, count the extra minutes.
+      if (overMs > MINUTE_MS) {
+        const minutes = `-${Math.floor(overMs / MINUTE_MS)}`;
+        return {
+          phase: "over",
+          big: minutes,
+          unit: "min",
+          caption,
+          compact: { value: minutes, unit: "min", caption: left },
+          progress: 1,
+          items,
+        };
+      }
       return {
         phase: "wrapup",
         big: "Wrap up",
@@ -152,6 +180,7 @@
     formatMinutes,
     normalizeSections,
     parseClock,
+    previousTurn,
     sectionPositionForSlide,
     startTurn,
     view,

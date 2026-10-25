@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Meeting Timer Overlay",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A calm, fair turn timer for Google Slides meetings: splits the time left evenly and shows whose turn it is.",
   "minimum_chrome_version": "102",
   "icons": {
@@ -26,6 +26,10 @@
     "next-section": {
       "suggested_key": { "default": "Alt+Shift+N" },
       "description": "Advance to the next section"
+    },
+    "previous-section": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "Return to the previous section"
     },
     "toggle-overlay": {
       "suggested_key": { "default": "Alt+Shift+O" },
