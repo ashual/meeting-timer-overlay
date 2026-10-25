@@ -1,16 +1,21 @@
 # Meeting Timer Overlay
 
-A free, open-source Chrome extension for Google Slides meetings with several presenters.
-Mark each speaker's first slide, set the meeting time, and present as usual. The timer switches
-sections automatically and gives each presenter a fair share of the time left.
+A free, open-source Chrome extension for Google Slides meetings with multiple speakers or
+topics and a fixed end time. Keep the time visible so everyone knows when to wrap up and
+move to the next presentation, conversation, or agenda item.
+
+Mark the first slide of each speaker or topic, then set the meeting's start time and duration.
+The timer follows those sections and recalculates a share of the time left at each transition.
 
 **[Add to Chrome — free](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc)** ·
 [Try the interactive demo](https://ashual.github.io/meeting-timer-overlay/demo.html) ·
 [Setup guide](https://ashual.github.io/meeting-timer-overlay/setup.html) ·
 [Weekly-update template](docs/downloads/weekly-team-update.pptx)
 
-Built for weekly engineering updates, research lab meetings, and team demos using one shared
-deck. No separate account or subscription. Settings stay in local browser storage.
+Use it for workshops, panels, board or committee meetings, lessons, training, team updates,
+or any other meeting that uses Google Slides to move through a timed agenda. One person can
+lead several topics, several people can speak, or the meeting can mix both. No separate
+account or subscription. Settings stay in local browser storage.
 
 ![The overlay on a slide during a meeting](store/assets/screenshot-1-overlay.png)
 
@@ -40,7 +45,7 @@ deck. No separate account or subscription. Settings stay in local browser storag
 - **Readable on any slide.** The card is see-through, but it blurs and darkens what's behind
   it, so the text stays readable on white, black, or busy slides.
 - **Follows your slides.** You never touch the timer during the meeting: a turn starts when you
-  reach the slide where that person's part begins.
+  reach the slide where the next speaker or topic begins.
 - **Presenter-friendly.** The overlay never takes focus or clicks, so you keep clicking or
   using the arrow keys to change slides. It works in fullscreen.
 
@@ -58,7 +63,8 @@ updates give time back to everyone after them, and long ones take it from the pe
 waiting.
 
 This shares the remaining budget rather than guaranteeing equal total airtime. An early
-overrun can leave later presenters with less time. The timer does not enforce a speaking limit.
+overrun can leave later speakers or topics with less time. The visible countdown supports
+shared time awareness; the facilitator still decides when to move on.
 
 A section reached before the meeting's start time holds its full share until the meeting
 starts. Times always come from the wall clock, so a throttled background tab never drifts.
@@ -84,7 +90,7 @@ unzip it, and load the unzipped folder the same way.
 2. Click **Scan deck**. The extension lists every slide's title and leaves out hidden
    (skipped) slides. Slide numbers match the editor's filmstrip and the slideshow, so they jump
    over hidden slides.
-3. Tick the slide where each section starts (for example, each person's first slide).
+3. Tick the slide where each section starts (a speaker's first slide or a new agenda topic).
    **Select all** and **Select none** help when most or few slides start a section. Edit the
    names if needed. Slides after a ticked slide belong to that section. If the scan fails, use
    **+ Add a section manually**.
@@ -96,7 +102,7 @@ unzip it, and load the unzipped folder the same way.
    section and splits the time still left among the sections from that one on.
 6. Click **Stop** in the popup when you're done. The overlay disappears.
 
-**Starter deck:** [Download the editable weekly-update template](docs/downloads/weekly-team-update.pptx).
+**One example:** [Download the editable weekly-update template](docs/downloads/weekly-team-update.pptx).
 Upload it to Drive, open with Google Slides, and save it as a Google Slides presentation.
 See [template instructions](docs/README.md). Copying a deck does not transfer
 the extension settings; each organizer configures their own browser.

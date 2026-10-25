@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to Add a Timer to Google Slides for Multiple Presenters</title>
-<meta name="description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker sections, set the meeting time, and present with automatic timer handoffs.">
+<title>How to Time Speakers and Agenda Topics in Google Slides</title>
+<meta name="description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker or topic sections, set the meeting time, and keep the agenda moving.">
 <link rel="canonical" href="https://ashual.github.io/meeting-timer-overlay/setup.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="How to Add a Timer to Google Slides for Multiple Presenters">
-<meta property="og:description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker sections, set the meeting time, and present with automatic timer handoffs.">
+<meta property="og:title" content="How to Time Speakers and Agenda Topics in Google Slides">
+<meta property="og:description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker or topic sections, set the meeting time, and keep the agenda moving.">
 <meta property="og:url" content="https://ashual.github.io/meeting-timer-overlay/setup.html">
 <meta property="og:image" content="https://ashual.github.io/meeting-timer-overlay/assets/screenshot-1-overlay.png">
 <meta property="og:image:alt" content="Example Google Slides meeting with the timer overlay and speaker queue">
@@ -25,15 +25,15 @@
 <a href="index.html">Overview</a>
 <a href="setup.html" aria-current="page">Setup guide</a>
 <a href="demo.html">Try the demo</a>
-<a href="weekly-update-template.html">Meeting template</a>
+<a href="weekly-update-template.html">Example template</a>
 <a href="https://github.com/ashual/meeting-timer-overlay">GitHub ↗</a>
 </nav>
 </header>
 <main id="main">
 <article class="wrap article">
 <p class="eyebrow">SETUP GUIDE</p>
-<h1>A Google Slides timer<br>for several presenters.</h1>
-<p class="intro">One shared deck, one meeting deadline, and a timer that switches sections as you advance the slides.</p>
+<h1>A Google Slides timer<br>for speakers and topics.</h1>
+<p class="intro">Multiple speakers or topics, one meeting deadline, and a visible countdown to help everyone see when to move on.</p>
 <p>Use desktop Chrome 102 or later. You need access to open a Google Slides presentation. The extension requires no separate account.</p>
 <h2>1. Install and open your deck</h2>
 <p>
@@ -42,12 +42,13 @@
 </p>
 <p>Open your presentation in the Google Slides editor, then click the extension’s toolbar icon. Pin it through Chrome’s Extensions menu if you want easier access.</p>
 <h2>2. Scan and choose section starts</h2>
-<p>Click <strong>Scan deck</strong>. Tick only the first slide of each speaker’s section. Slides between two checked slides belong to the earlier section. Edit the suggested section names if needed.</p>
+<p>Click <strong>Scan deck</strong>. Tick only the first slide of each speaker or topic section. Slides between two checked slides belong to the earlier section. Name sections after the speaker, the agenda item, or both. One speaker can lead multiple topic sections.</p>
 <p>Slide titles are inferred from prominent text. Check them before presenting. Scanning normally excludes hidden slides. If Google’s slideshow list cannot be read, hidden slides may remain in the scan.</p>
 <figure>
 <img src="assets/screenshot-3-setup.png" alt="Extension setup popup listing slide titles, section checkboxes, start time, and meeting duration" width="1280" height="800" loading="lazy">
 <figcaption>Repository-rendered setup example. Your slide names will differ.</figcaption>
 </figure>
+<p>For a discussion-led meeting, use a title slide for each agenda item and keep the audience-facing slideshow visible. Move to the next marked slide, or use the manual next-section control, when the conversation moves on. The extension follows section controls; it does not listen to the conversation.</p>
 <h2>3. Set the start time and duration</h2>
 <p>Set <strong>Start</strong> and <strong>Duration (min)</strong>, then click <strong>Start session</strong>. The extension’s toolbar icon displays <strong>ON</strong>. If you have an untimed opening agenda, start the session just before the first timed presenter.</p>
 <p>A section reached before the scheduled start holds its allocation until that start. Allocations use the wall clock, so check the scheduled time rather than assuming Start session resets it.</p>
@@ -64,7 +65,7 @@
 <p>
 <code>section allocation = (meeting end − now) ÷ sections left</code>
 </p>
-<p>With 22 minutes and five sections left, the first allocation is 4.4 minutes, displayed as “4 min”. If that speaker uses two minutes, the next allocation is 20 ÷ 4 = five minutes. Long updates reduce what remains. This does not guarantee equal airtime.</p>
+<p>With 22 minutes and five sections left, the first allocation is 4.4 minutes, displayed as “4 min”. If that speaker uses two minutes, the next allocation is 20 ÷ 4 = five minutes. Long sections reduce what remains for later topics or speakers. This does not guarantee equal airtime or stop a discussion.</p>
 <p>At the end of a turn, the timer shows amber “Wrap up”. More than a minute over, negative minutes appear in red. It does not stop the slideshow.</p>
 <h2>Manual controls</h2>
 <div class="table-scroll">
@@ -125,7 +126,7 @@
 <div class="footer-links">
 <a href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Chrome Web Store</a>
 <a href="https://github.com/ashual/meeting-timer-overlay/issues">Support</a>
-<a href="weekly-team-meeting.html">Meeting agenda</a>
+<a href="weekly-team-meeting.html">Team agenda example</a>
 <a href="privacy.html">Privacy</a>
 <a href="https://github.com/ashual/meeting-timer-overlay/blob/main/LICENSE">MIT license</a>
 </div>

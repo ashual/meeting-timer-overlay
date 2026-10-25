@@ -55,6 +55,6 @@ References checked 26 October 2026:
 - `timer-model.js` is a verbatim copy of `extension/src/schedule.js`. After changing the
   extension schedule model, copy it here too. `check:site` verifies they match.
 - The demo uses no network calls, browser storage, or analytics. Share links contain only
-  `minutes` (5–120) and `speakers` (2–8). They open a fresh example, not saved progress.
+  `minutes` (5–120) and `speakers` (2–8, the number of speaker/topic sections; retained for existing share links). They open a fresh example, not saved progress.
 - `weekly-team-meeting.html` provides a 30-minute example agenda with a 22-minute
   presenter block. It includes a facilitator-controlled discussion buffer.

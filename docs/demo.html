@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Try a Google Slides Meeting Timer | Interactive Demo</title>
-<meta name="description" content="Try how early finishes and overruns change the next presenter’s time. An interactive example of Meeting Timer Overlay. No installation or account needed.">
+<meta name="description" content="Try how early finishes and overruns change the next topic or speaker’s time. An interactive example of Meeting Timer Overlay. No installation or account needed.">
 <link rel="canonical" href="https://ashual.github.io/meeting-timer-overlay/demo.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Try a Google Slides Meeting Timer | Interactive Demo">
-<meta property="og:description" content="Try how early finishes and overruns change the next presenter’s time. An interactive example of Meeting Timer Overlay. No installation or account needed.">
+<meta property="og:description" content="Try how early finishes and overruns change the next topic or speaker’s time. An interactive example of Meeting Timer Overlay. No installation or account needed.">
 <meta property="og:url" content="https://ashual.github.io/meeting-timer-overlay/demo.html">
 <meta property="og:image" content="https://ashual.github.io/meeting-timer-overlay/assets/screenshot-1-overlay.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -26,47 +26,47 @@
 <a href="index.html">Overview</a>
 <a href="setup.html">Setup guide</a>
 <a href="demo.html" aria-current="page">Try the demo</a>
-<a href="weekly-update-template.html">Meeting template</a>
+<a href="weekly-update-template.html">Example template</a>
 <a href="https://github.com/ashual/meeting-timer-overlay">GitHub ↗</a>
 </nav>
 </header>
 <main id="main"><article class="wrap article">
 
 <p class="eyebrow">INTERACTIVE EXAMPLE · NO INSTALLATION</p>
-<h1>What happens when<br>someone runs over?</h1>
-<p class="intro">Try a five-presenter meeting. Finish early or run late, then watch the next person’s allocation change.</p>
+<h1>What happens when<br>one topic runs over?</h1>
+<p class="intro">Try five agenda sections: different speakers, different topics, or a mix. Finish early or run late, then see the time left for the next section.</p>
 <p>This is a simulation of the extension’s timing rule. It does not connect to Google Slides. The example clock advances only when you click; the installed extension follows your slides and uses the real clock.</p>
-<noscript><p class="note">Enable JavaScript to use this demo. With 22 minutes and five presenters, the first allocation is 4:24. After a two-minute update, the next presenter gets 5:00. After a seven-minute update, the next gets 3:45. <a href="setup.html">Read the setup guide.</a></p></noscript>
+<noscript><p class="note">Enable JavaScript to use this demo. With 22 minutes and five sections, the first allocation is 4:24. After a two-minute topic, the next gets 5:00. After a seven-minute topic, the next gets 3:45. <a href="setup.html">Read the setup guide.</a></p></noscript>
 <form id="setup" class="demo-setup">
 <label>Meeting budget (minutes)<input id="minutes" type="number" min="5" max="120" value="22" required></label>
-<label>Presenters<select id="speakers"><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option></select></label>
+<label>Speakers / topics<select id="speakers"><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>8</option></select></label>
 <button type="submit" class="button">Start / reset</button>
 </form>
 <div class="demo-scenarios"><button id="early" type="button">Try an early finish</button><button id="late" type="button">Try an overrun</button></div>
 <p id="status" class="note" role="status" aria-live="polite" aria-atomic="true"></p>
 <div class="demo-grid">
-<section id="demo-card" class="demo-card" aria-label="Example presenter timer">
-<p class="eyebrow">PRESENTING NOW</p><h2 id="speaker">Alex</h2>
+<section id="demo-card" class="demo-card" aria-label="Example section timer">
+<p class="eyebrow">CURRENT SECTION</p><h2 id="speaker">Topic 1</h2>
 <div id="countdown" class="demo-countdown">4</div><p id="unit">min</p>
 <p class="meta">Rounded whole-minute display, as in the extension.</p>
-<dl class="demo-stats"><div><dt>Allocated at handoff</dt><dd id="allocation">4:24</dd></div><div><dt>This turn used</dt><dd id="used">0:00</dd></div></dl>
+<dl class="demo-stats"><div><dt>Allocated at handoff</dt><dd id="allocation">4:24</dd></div><div><dt>This section used</dt><dd id="used">0:00</dd></div></dl>
 </section>
 <section class="demo-queue" aria-label="Example meeting queue">
 <div class="demo-stats"><div><p>Meeting time left</p><strong id="remaining">22:00</strong></div><div><p>Elapsed</p><strong id="elapsed">0:00</strong></div></div>
 <ol id="queue"></ol>
 </section>
 </div>
-<div class="demo-controls"><button id="advance" type="button">Use 1 minute</button><button id="next" type="button" class="button">Next presenter →</button><button id="previous" type="button">Previous presenter</button><button id="share" type="button">Copy this setup</button></div>
+<div class="demo-controls"><button id="advance" type="button">Use 1 minute</button><button id="next" type="button" class="button">Next section →</button><button id="previous" type="button">Previous section</button><button id="share" type="button">Copy this setup</button></div>
 <input id="share-link" type="text" readonly hidden aria-label="Share this example setup">
 <h2>The rule you are trying</h2>
-<p><code>next allocation = max(0, meeting end − now) ÷ presenters left</code></p>
-<p>At the start: 22 ÷ 5 = 4:24 each. If Alex finishes after two minutes, Sam starts with 20 ÷ 4 = 5:00. If Alex takes seven minutes, Sam starts with 15 ÷ 4 = 3:45. The other presenters’ shares are recalculated when their sections start.</p>
-<p>This shares the remaining budget. It does not guarantee equal total airtime or stop a presenter. Going back with the manual control recalculates from the time left now.</p>
+<p><code>next allocation = max(0, meeting end − now) ÷ sections left</code></p>
+<p>At the start: 22 ÷ 5 = 4:24 each. If Topic 1 finishes after two minutes, Topic 2 starts with 20 ÷ 4 = 5:00. If Topic 1 takes seven minutes, Topic 2 starts with 15 ÷ 4 = 3:45. The remaining sections’ shares are recalculated when they start. The same rule applies when sections are speakers.</p>
+<p>This shares the remaining budget. It does not guarantee equal total airtime or stop a speaker or discussion. Going back with the manual control recalculates from the time left now.</p>
 <h2>Use it with your own slides</h2>
-<p>The free Chrome extension adds the timer and speaker queue to your audience-facing Google Slides presentation. Mark the first slide of each speaker’s section; your slides handle the handoffs.</p>
+<p>The free Chrome extension adds the timer and section queue to your audience-facing Google Slides presentation. Mark the first slide of each speaker or topic section. Use a marked slide or the manual next-section control to move the agenda forward.</p>
 <p><a class="button" href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Add to Chrome ↗</a></p>
 <p><a href="setup.html">Setup guide</a> · <a href="weekly-update-template.html">Editable meeting deck</a> · <a href="weekly-team-meeting.html">30-minute meeting agenda</a></p>
-<p class="meta">The example uses the extension’s schedule model. No account, storage, or analytics are used by the demo. Setup links contain only the budget and number of presenters.</p>
+<p class="meta">The example uses the extension’s schedule model. No account, storage, or analytics are used by the demo. Setup links contain only the budget and number of sections.</p>
 
 </article></main>
 <footer class="wrap">
@@ -77,7 +77,7 @@
 <div class="footer-links">
 <a href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Chrome Web Store</a>
 <a href="https://github.com/ashual/meeting-timer-overlay/issues">Support</a>
-<a href="weekly-team-meeting.html">Meeting agenda</a>
+<a href="weekly-team-meeting.html">Team agenda example</a>
 <a href="privacy.html">Privacy</a>
 <a href="https://github.com/ashual/meeting-timer-overlay/blob/main/LICENSE">MIT license</a>
 </div>
