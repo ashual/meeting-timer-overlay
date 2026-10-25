@@ -1,13 +1,14 @@
 # Search visibility: next actions
 
-Checked 26 October 2026. The existing homepage, setup, template, privacy, sitemap, stylesheet,
-and deck returned HTTP 200. This proves public availability, not search indexing.
-The interactive demo and meeting agenda are prepared in a separate PR.
+Checked 26 October 2026. All six website pages, the sitemap, stylesheet, and editable deck are live.
+All six pages have matching canonical URLs and no noindex directive was found in the
+page metadata or response headers. Public availability does not prove search indexing.
 
 ## Search Console ownership
 
-The current connected tools cannot manage Search Console. An owner must complete the account
-verification flow; no ownership or indexing has been claimed.
+Ownership was verified on 26 October 2026 using Google’s HTML-tag method. The verification
+tag is published in `docs/index.html`; retain it so ownership can be rechecked. The following
+steps are retained as a reference for recovery or additional verification methods.
 
 1. Open https://search.google.com/search-console/about and add a URL-prefix property for
    `https://ashual.github.io/meeting-timer-overlay/` (include HTTPS and the project path).
@@ -54,9 +55,11 @@ Record the same date range for each observation:
 - Store listing visits and installs from the actual Chrome Web Store dashboard.
 - Organizers confirming first meetings and repeat meetings, counted separately.
 
-None of those account metrics were accessed in this batch. Site visits and UTM strings do
-not establish extension installs or real meeting use. Keep private pilot details outside
-this public repository. Leave unobserved metrics unknown.
+Search Console currently reports that aggregate data is processing. Before the first
+indexing request, the homepage inspection said URL is unknown to Google. Requests to crawl
+are recorded separately from confirmed indexing. Store analytics and meeting-use metrics
+were not accessed. Site visits and UTM strings do not establish installs or real meeting
+use. Keep private pilot details outside this public repository. Leave unobserved metrics unknown.
 
 ## Sources
 
@@ -65,3 +68,20 @@ this public repository. Leave unobserved metrics unknown.
   https://developers.google.com/search/docs/appearance/ai-features
 - Sitemap submission:
   https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
+
+## 26 October 2026 Search Console setup
+
+- URL-prefix property created for `https://ashual.github.io/meeting-timer-overlay/`.
+- Ownership verification succeeded using the published HTML tag.
+- Indexing requested for the homepage, setup guide, interactive demo, and meeting agenda.
+  Google confirmed addition of all four URLs to its priority crawl queue.
+  Each inspection initially reported that the URL was unknown to Google; queue acceptance
+  is not confirmation that the pages are indexed.
+- Sitemap submitted and retried once after its first fetch error. The Sitemaps report
+  still displayed “Couldn’t fetch” during this session. This is not recorded as success.
+- Google’s live URL test of the exact sitemap URL succeeded: Crawl allowed = Yes,
+  Page fetch = Successful, Indexing allowed = Yes. The public URL returns valid XML
+  with HTTP 200. The host-root robots.txt returns 404; no blocking rule was found.
+- The Manual actions report says “No issues detected”.
+- Recheck sitemap processing after Google’s next fetch; no root cause was established
+  for the report error, and no indexing or search-traffic gain is claimed.
