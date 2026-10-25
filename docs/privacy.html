@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Meeting Timer Overlay</title>
+<meta name="description" content="Meeting Timer Overlay privacy policy: local browser storage, Google Slides scanning requests, no developer backend, separate accounts, or analytics.">
+<link rel="canonical" href="https://ashual.github.io/meeting-timer-overlay/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy | Meeting Timer Overlay">
+<meta property="og:description" content="Meeting Timer Overlay privacy policy: local browser storage, Google Slides scanning requests, no developer backend, separate accounts, or analytics.">
+<meta property="og:url" content="https://ashual.github.io/meeting-timer-overlay/privacy.html">
+<meta property="og:image" content="https://ashual.github.io/meeting-timer-overlay/assets/screenshot-1-overlay.png">
+<meta property="og:image:alt" content="Example Google Slides meeting with the timer overlay and speaker queue">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+<a class="brand" href="index.html">
+<img src="assets/icon.png" alt="" width="30" height="30">Meeting Timer Overlay</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Overview</a>
+<a href="setup.html">Setup guide</a>
+<a href="weekly-update-template.html">Meeting template</a>
+<a href="https://github.com/ashual/meeting-timer-overlay">GitHub ↗</a>
+</nav>
+</header>
+<main id="main">
+<article class="wrap article">
+<p class="eyebrow">PRIVACY POLICY</p>
+<h1>Privacy and<br>your presentation.</h1>
+<p>This is a verbatim copy of the repository policy. <a href="https://github.com/ashual/meeting-timer-overlay/blob/main/PRIVACY.md">Read the source policy on GitHub.</a>
+</p>
+<pre class="policy"># Privacy policy
+
+_Last updated: October 24, 2026_
+
+Meeting Timer Overlay (&quot;the extension&quot;) is a Chrome extension that shows a turn timer and a
+list of sections on top of Google Slides presentations. This policy explains what data the
+extension handles and what it does with it.
+
+## The short version
+
+The extension has no servers, no accounts, no analytics, and no advertising. Everything it
+reads or saves stays in your browser on your device. It never sends your data to the
+developer or to anyone else.
+
+## What the extension reads
+
+On Google Slides pages (`https://docs.google.com/presentation/...`) only, the extension reads:
+
+- **The presentation&#x27;s ID, title, and slide titles.** When you click **Scan deck**, the
+  extension asks Google for two views of the presentation that is already open in your tab:
+  the accessible HTML view (`/htmlpresent`) and the slideshow page (`/present`). These requests
+  go only to `docs.google.com`, use your existing Google session in that tab, and are the same
+  pages Google Slides itself serves. The extension uses them to list slide titles and to leave
+  out slides you&#x27;ve hidden (skipped).
+- **Which slide is showing** while you present, from the slideshow page&#x27;s address and its
+  on-screen slide number. This is how the timer knows when the next section starts.
+
+The extension&#x27;s content script also loads on other `docs.google.com` pages (a Chrome
+requirement for following Slides into its slideshow frames), but there it stops immediately
+without reading anything.
+
+## What the extension saves
+
+In `chrome.storage.local`, which lives on your device and isn&#x27;t synced:
+
+- **Per presentation:** the slide numbers and titles from the last scan, the section names you
+  typed, which slides you ticked, and the meeting&#x27;s start time and duration. These are saved
+  so next week&#x27;s setup takes seconds.
+- **While a session runs:** the presentation ID and title, the section names, the meeting&#x27;s
+  start and end times, the current section, and whether you hid the overlay.
+
+Clicking **Stop** deletes the running session. To delete everything, remove the extension or
+clear its data from `chrome://extensions`.
+
+## What the extension never does
+
+- It doesn&#x27;t send any data off your device, except the requests to `docs.google.com`
+  described above, which only fetch your own presentation from Google.
+- It doesn&#x27;t sell, share, or transfer user data to third parties.
+- It doesn&#x27;t use or transfer user data for purposes unrelated to its single purpose: timing
+  sections of a Google Slides presentation.
+- It doesn&#x27;t use or transfer user data to determine creditworthiness or for lending purposes.
+- It doesn&#x27;t load or run code from outside the extension package.
+
+## Changes
+
+If this policy changes, the new version will be published at this address with a new date.
+Material changes will also be noted in the extension&#x27;s release notes.
+
+## Contact
+
+Questions or concerns: open an issue in the project repository or email the developer at the
+contact address listed on the extension&#x27;s Chrome Web Store page.
+</pre>
+</article>
+</main>
+<footer class="wrap">
+<div>
+<strong>Meeting Timer Overlay</strong>
+<p>Free. Open source. Built for the shared deck.</p>
+</div>
+<div class="footer-links">
+<a href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Chrome Web Store</a>
+<a href="https://github.com/ashual/meeting-timer-overlay/issues">Support</a>
+<a href="privacy.html">Privacy</a>
+<a href="https://github.com/ashual/meeting-timer-overlay/blob/main/LICENSE">MIT license</a>
+</div>
+<p class="legal">Independent project. Not affiliated with or endorsed by Google. Google Slides is a trademark of Google LLC.</p>
+</footer>
+</body>
+</html>

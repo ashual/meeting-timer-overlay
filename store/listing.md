@@ -1,8 +1,13 @@
 # Chrome Web Store listing
 
 Copy-paste source for every field in the
-[Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole). Fields
-are listed in the order the dashboard shows them. Character limits are the store's.
+[Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
+
+**Editing this file does not update the public store listing.** Publish approved copy through
+the dashboard after checking it against the installed store build. The manifest summary
+remains unchanged in this documentation update.
+
+Fields are listed in the order the dashboard shows them. Character limits are the store's.
 
 ## Package
 
@@ -21,9 +26,9 @@ Upload `dist/meeting-timer-overlay-<version>.zip` from `npm run build`.
 **Description** (max 16,000; plain text):
 
 ```text
-Keep your weekly round of updates fair, without being the one who interrupts.
+A free Google Slides meeting timer for weekly team updates, research lab meetings, and team demos.
 
-Meeting Timer Overlay adds a small, calm card to the corner of your Google Slides presentation. It shows a countdown for whoever is presenting and the list of everyone who's up, so the whole room can see whose turn it is and how much time is left. Nobody has to watch the clock.
+Meeting Timer Overlay adds a small, calm card to the corner of your Google Slides presentation. It shows a countdown for whoever is presenting and the list of everyone who's up, so the whole room can see whose turn it is and how much time is left. Mark the slide where each speaker starts. The timer switches sections automatically and gives each presenter a fair share of the time left.
 
 HOW THE TIME IS SPLIT
 Every section gets an equal share of the time that's actually left when it begins:
@@ -41,20 +46,28 @@ WHAT YOU SEE
 IT FOLLOWS YOUR SLIDES
 You never touch the timer during the meeting. Tick the slide where each person's part starts; when you reach that slide, their turn begins. Detail slides in between belong to the current person, going back through slides leaves the turn as it is, and jumping ahead marks skipped sections as done. Alt+Shift+P returns to the previous section and recalculates the time left.
 
-SET UP IN UNDER A MINUTE
+SETUP
 1. Open your deck and click the extension icon.
 2. Click "Scan deck". Slide titles are listed for you, and hidden (skipped) slides are left out.
 3. Tick where each section starts, set the meeting's start time and duration, and click "Start session".
 4. Present as usual.
-Your setup is saved per presentation, so next week you just rescan and start.
+Your setup is saved locally per presentation, so next week you rescan and adjust the start time. Another organizer or copied deck needs its own setup.
 
 MADE FOR PRESENTING
 • The overlay never takes focus or clicks: keep clicking or using arrow keys to change slides.
 • Works in fullscreen slideshows.
 • Optional shortcuts: Alt+Shift+N advances to the next section, Alt+Shift+P returns to the previous section and recalculates the time left, Alt+Shift+O shows or hides the overlay.
 
-PRIVATE BY DESIGN
-No accounts, no servers, no analytics. Your slide titles and settings stay in your browser. The extension only reads Google Slides pages you open.
+WORKFLOW LIMITS
+Shares remaining time rather than guaranteeing equal total airtime. An early overrun leaves less time for later speakers. The timer does not enforce a speaking limit.
+Runs on Google Slides in desktop Chrome, including fullscreen. The separate speaker-notes window is excluded. There is no native Zoom or Google Meet integration.
+
+FREE AND OPEN SOURCE
+MIT licensed. Source and support: https://github.com/ashual/meeting-timer-overlay
+
+PRIVACY
+No separate accounts, developer backend, advertising, or analytics. Slide titles and settings stay in local browser storage. Scanning fetches views of your open deck from docs.google.com using your existing Google session.
+Privacy policy: https://github.com/ashual/meeting-timer-overlay/blob/main/PRIVACY.md
 
 Meeting Timer Overlay is an independent project and isn't affiliated with or endorsed by Google. Google Slides is a trademark of Google LLC.
 ```
@@ -82,7 +95,7 @@ The marquee tile is optional; it's only used if the store features the extension
 ### Additional fields
 
 - **Official URL:** leave as "None" unless you verify a domain in Google Search Console.
-- **Homepage URL:** the repository's public page.
+- **Homepage URL:** `https://github.com/ashual/meeting-timer-overlay` until the project website is deployed. Then use `https://ashual.github.io/meeting-timer-overlay/`.
 - **Support URL:** the repository's issues page.
 - **Mature content:** No.
 
@@ -119,7 +132,7 @@ Then tick all three certifications:
 - I do not use or transfer user data to determine creditworthiness or for lending purposes.
 
 **Privacy policy URL:** a public link to `PRIVACY.md`, for example
-`https://github.com/<owner>/meeting-timer-overlay/blob/main/PRIVACY.md`.
+`https://github.com/ashual/meeting-timer-overlay/blob/main/PRIVACY.md`.
 
 ## Distribution tab
 

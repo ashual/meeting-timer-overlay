@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Add a Timer to Google Slides for Multiple Presenters</title>
+<meta name="description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker sections, set the meeting time, and present with automatic timer handoffs.">
+<link rel="canonical" href="https://ashual.github.io/meeting-timer-overlay/setup.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to Add a Timer to Google Slides for Multiple Presenters">
+<meta property="og:description" content="Set up Meeting Timer Overlay: scan your Google Slides deck, mark speaker sections, set the meeting time, and present with automatic timer handoffs.">
+<meta property="og:url" content="https://ashual.github.io/meeting-timer-overlay/setup.html">
+<meta property="og:image" content="https://ashual.github.io/meeting-timer-overlay/assets/screenshot-1-overlay.png">
+<meta property="og:image:alt" content="Example Google Slides meeting with the timer overlay and speaker queue">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+<a class="brand" href="index.html">
+<img src="assets/icon.png" alt="" width="30" height="30">Meeting Timer Overlay</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Overview</a>
+<a href="setup.html" aria-current="page">Setup guide</a>
+<a href="weekly-update-template.html">Meeting template</a>
+<a href="https://github.com/ashual/meeting-timer-overlay">GitHub ↗</a>
+</nav>
+</header>
+<main id="main">
+<article class="wrap article">
+<p class="eyebrow">SETUP GUIDE</p>
+<h1>A Google Slides timer<br>for several presenters.</h1>
+<p class="intro">One shared deck, one meeting deadline, and a timer that switches sections as you advance the slides.</p>
+<p>Use desktop Chrome 102 or later. You need access to open a Google Slides presentation. The extension requires no separate account.</p>
+<h2>1. Install and open your deck</h2>
+<p>
+<a class="button" href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Add to Chrome <span aria-hidden="true">↗</span>
+</a>
+</p>
+<p>Open your presentation in the Google Slides editor, then click the extension’s toolbar icon. Pin it through Chrome’s Extensions menu if you want easier access.</p>
+<h2>2. Scan and choose section starts</h2>
+<p>Click <strong>Scan deck</strong>. Tick only the first slide of each speaker’s section. Slides between two checked slides belong to the earlier section. Edit the suggested section names if needed.</p>
+<p>Slide titles are inferred from prominent text. Check them before presenting. Scanning normally excludes hidden slides. If Google’s slideshow list cannot be read, hidden slides may remain in the scan.</p>
+<figure>
+<img src="assets/screenshot-3-setup.png" alt="Extension setup popup listing slide titles, section checkboxes, start time, and meeting duration" width="1280" height="800" loading="lazy">
+<figcaption>Repository-rendered setup example. Your slide names will differ.</figcaption>
+</figure>
+<h2>3. Set the start time and duration</h2>
+<p>Set <strong>Start</strong> and <strong>Duration (min)</strong>, then click <strong>Start session</strong>. The extension’s toolbar icon displays <strong>ON</strong>. If you have an untimed opening agenda, start the session just before the first timed presenter.</p>
+<p>A section reached before the scheduled start holds its allocation until that start. Allocations use the wall clock, so check the scheduled time rather than assuming Start session resets it.</p>
+<h2>4. Present and hand over</h2>
+<p>Open the audience-facing slideshow. Reaching a checked slide starts its section. Moving through detail slides or going back through the deck leaves the current section unchanged. Jumping ahead marks intervening sections as done.</p>
+<p>The card shrinks after five seconds without a slide change and expands on the next change. The overlay works in fullscreen and lets presentation clicks pass through.</p>
+<figure>
+<img src="assets/screenshot-2-compact.png" alt="Compact timer strip above a Google Slides example presentation" width="1280" height="800" loading="lazy">
+<figcaption>The compact strip keeps the countdown visible between slide changes.</figcaption>
+</figure>
+<h2>5. Stop and reuse</h2>
+<p>Click <strong>Stop</strong> in the popup to remove the overlay and delete the running session. The deck’s setup remains in local storage. Next week, rescan and adjust the start time. Rescanning matches section selections and edited names by slide ID.</p>
+<h2>How the time changes</h2>
+<p>
+<code>section allocation = (meeting end − now) ÷ sections left</code>
+</p>
+<p>With 22 minutes and five sections left, the first allocation is 4.4 minutes, displayed as “4 min”. If that speaker uses two minutes, the next allocation is 20 ÷ 4 = five minutes. Long updates reduce what remains. This does not guarantee equal airtime.</p>
+<p>At the end of a turn, the timer shows amber “Wrap up”. More than a minute over, negative minutes appear in red. It does not stop the slideshow.</p>
+<h2>Manual controls</h2>
+<div class="table-scroll">
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<kbd>Alt+Shift+N</kbd>
+</td>
+<td>Advance to the next section</td>
+</tr>
+<tr>
+<td>
+<kbd>Alt+Shift+P</kbd>
+</td>
+<td>Return to the previous section and recalculate the time left</td>
+</tr>
+<tr>
+<td>
+<kbd>Alt+Shift+O</kbd>
+</td>
+<td>Show or hide the overlay</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The popup offers the same controls. Change key bindings at <code>chrome://extensions/shortcuts</code>.</p>
+<h2>If something goes wrong</h2>
+<dl>
+<dt>The popup asks me to open Slides</dt>
+<dd>Make the Slides editor tab active, then reopen the popup.</dd>
+<dt>Scan deck fails</dt>
+<dd>Refresh Slides and retry. If it still fails, use “+ Add a section manually” and the manual section controls.</dd>
+<dt>The overlay is missing</dt>
+<dd>Check for the ON badge and try Alt+Shift+O. Use the audience-facing slideshow rather than the speaker-notes window. Refresh Slides after installing or updating the extension.</dd>
+<dt>The wrong presenter is active</dt>
+<dd>Check the section-start slides. Use the popup’s Previous section or Next section controls to recover.</dd>
+</dl>
+<p>Google Slides page changes can affect scanning and detection. <a href="https://github.com/ashual/meeting-timer-overlay/issues">Report a problem on GitHub</a>, with a non-sensitive example when possible.</p>
+<div class="note">
+<strong>Screen sharing:</strong> the extension runs in Chrome, so verify the selected slideshow surface includes the overlay before sharing with Zoom or Meet attendees.</div>
+<p>
+<a href="weekly-update-template.html">Try the editable weekly-update template →</a>
+</p>
+</article>
+</main>
+<footer class="wrap">
+<div>
+<strong>Meeting Timer Overlay</strong>
+<p>Free. Open source. Built for the shared deck.</p>
+</div>
+<div class="footer-links">
+<a href="https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc">Chrome Web Store</a>
+<a href="https://github.com/ashual/meeting-timer-overlay/issues">Support</a>
+<a href="privacy.html">Privacy</a>
+<a href="https://github.com/ashual/meeting-timer-overlay/blob/main/LICENSE">MIT license</a>
+</div>
+<p class="legal">Independent project. Not affiliated with or endorsed by Google. Google Slides is a trademark of Google LLC.</p>
+</footer>
+</body>
+</html>

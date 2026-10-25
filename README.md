@@ -1,8 +1,15 @@
 # Meeting Timer Overlay
 
-A Chrome extension that keeps a round of updates fair. While you present a Google Slides deck,
-a calm card in the corner shows a countdown for whoever is presenting and the list of everyone
-who's up, so the whole room can see whose turn it is and how much time is left.
+A free, open-source Chrome extension for Google Slides meetings with several presenters.
+Mark each speaker's first slide, set the meeting time, and present as usual. The timer switches
+sections automatically and gives each presenter a fair share of the time left.
+
+**[Add to Chrome — free](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc)** ·
+[Setup guide](#running-a-meeting) ·
+[Weekly-update template](docs/downloads/weekly-team-update.pptx)
+
+Built for weekly engineering updates, research lab meetings, and team demos using one shared
+deck. No separate account or subscription. Settings stay in local browser storage.
 
 ![The overlay on a slide during a meeting](store/assets/screenshot-1-overlay.png)
 
@@ -49,12 +56,15 @@ With 22 minutes left and 5 sections, the first person gets 22 / 5 = 4.4 minutes 
 updates give time back to everyone after them, and long ones take it from the people still
 waiting.
 
+This shares the remaining budget rather than guaranteeing equal total airtime. An early
+overrun can leave later presenters with less time. The timer does not enforce a speaking limit.
+
 A section reached before the meeting's start time holds its full share until the meeting
 starts. Times always come from the wall clock, so a throttled background tab never drifts.
 
 ## Install
 
-**From the Chrome Web Store:** _(link once published)_
+**From the Chrome Web Store:** [Install Meeting Timer Overlay](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc).
 
 **From source** (no build step):
 
@@ -84,6 +94,11 @@ unzip it, and load the unzipped folder the same way.
    Jumping ahead marks the skipped sections as done. `Alt+Shift+P` returns to the previous
    section and splits the time still left among the sections from that one on.
 6. Click **Stop** in the popup when you're done. The overlay disappears.
+
+**Starter deck:** [Download the editable weekly-update template](docs/downloads/weekly-team-update.pptx).
+Upload it to Drive, open with Google Slides, and save it as a Google Slides presentation.
+See [template instructions](docs/README.md). Copying a deck does not transfer
+the extension settings; each organizer configures their own browser.
 
 The setup (ticks, names, start time, and duration) is saved per presentation, so next week you
 only rescan and adjust. Rescanning keeps your ticks and edited names, matched by slide ID.
@@ -151,6 +166,8 @@ structure:
 
 - Slide titles are a heuristic (largest, then highest text), so check the suggested names.
 - If the slideshow's slide list can't be read, hidden slides aren't left out of the scan.
+- It runs on Google Slides in desktop Chrome. It has no native Zoom or Google Meet integration.
+  Check that your screen-sharing surface includes the overlay before your meeting.
 - Speaker-notes (Presenter view) windows are ignored on purpose. The overlay appears on the
   audience-facing slideshow.
 - If Google changes its markup, scanning fails with a message. You can still add sections
@@ -187,6 +204,8 @@ store/
   listing.md          Every Chrome Web Store field, ready to paste
   assets/             Screenshots and promo tiles
   templates/          The page those images are rendered from, using the real overlay and popup
+docs/                 Static project website, setup guide, and editable meeting template
+marketing/            Launch drafts and free growth experiment tracker
 PRIVACY.md            Privacy policy (link it in the store listing)
 CHANGELOG.md          Release notes
 ```
@@ -277,3 +296,9 @@ Users get the update automatically within a few hours of approval.
 
 [MIT](LICENSE). Meeting Timer Overlay is an independent project and isn't affiliated with or
 endorsed by Google. Google Slides is a trademark of Google LLC.
+
+## Project website
+
+The static site is in [`docs/`](docs/). See [publication instructions](docs/README.md) for
+GitHub Pages setup, the intended canonical URL, and the post-publication checks.
+Website changes do not require a new extension release.

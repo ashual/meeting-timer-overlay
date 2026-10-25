@@ -11,6 +11,7 @@
     "build": "node scripts/build.mjs",
     "icons": "node scripts/make-icons.mjs",
     "store-assets": "node scripts/store-assets.mjs",
-    "check": "npm test && npm run build"
+    "check": "npm test && npm run build",
+    "check:site": "node scripts/check-site.mjs"
   }
 }
