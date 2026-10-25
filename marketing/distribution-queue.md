@@ -1,13 +1,15 @@
 # Free distribution queue
 
 Prepared 26 October 2026. These are researched opportunities and ready-to-use drafts, not
-completed submissions or endorsements. Nothing has been sent. The demo and agenda URLs below
-become available after the associated PR is merged and Pages finishes deploying.
+completed submissions or endorsements. Nothing has been sent. The demo and agenda are live, and Search Console ownership is verified.
+See [outreach-research.md](outreach-research.md) for the expanded six-target editorial/directory
+shortlist, verified contact routes, current evidence, and tailored drafts.
 
 ## Order of work
 
-1. Merge the interactive-demo PR; verify the two new public pages.
-2. Verify Search Console and submit the sitemap (see `search-visibility.md`).
+1. Completed: merge the interactive-demo PR and verify the two new public pages.
+2. Completed: verify Search Console and submit the sitemap. Its fetch-report issue remains
+   documented in `search-visibility.md`; Google accepted four direct indexing requests.
 3. Run one real meeting; confirm the store build and capture a real walkthrough.
 4. Publish the maker's LinkedIn post and Show HN while the maker can answer questions.
 5. Submit AlternativeTo; treat its review queue separately from publication.
@@ -16,21 +18,21 @@ become available after the associated PR is merged and Pages finishes deploying.
 Prioritize organizer feedback over launch votes. No paid placements, hunters, ads, or
 submission fees are included. If any route requires payment, skip it.
 
-## Five researched opportunities
+## Initial launch shortlist
 
 | Priority | Destination | Why it fits | Verified route / requirement | Status |
 | --- | --- | --- | --- | --- |
 | 1 | Show HN | The open-source extension has a concrete implementation and an allocation tradeoff to discuss. The browser simulation reduces installation friction. | Submit at https://news.ycombinator.com/submit using a personal account. Explain the actual extension, disclose the simulation's scope, and be available to discuss it. Do not ask for votes. | Draft below; not submitted |
 | 2 | AlternativeTo | A directory entry can explain the multi-presenter workflow to people comparing timer software. | User menu → Suggest new application. Verified email required; entries go through moderation. Check for an existing entry before creating another. | Listing fields below; not submitted |
 | 3 | Teacher Tech / Alice Keeler | Her own guide covers ClayCodes Slides Timer and auto-advance, so a presenter-section timer is a specific adjacent use case. Classroom fit is a hypothesis, not validated. | Public contact page: https://alicekeeler.com/contact-me/. It is primarily a professional-services contact route, not a promise to review unsolicited software. Confirm editorial suitability before sending. | Tailored pitch below; not sent |
-| 4 | Control Alt Achieve / Eric Curts | His own countdown-timer guide discusses free timers and Google tools. The article is from 2016; its age lowers confidence in a new pitch. | Public Connect page: https://www.controlaltachieve.com/p/connect.html. No free editorial submission program was established in this research. | Tailored pitch below; not sent |
+| 4 | Control Alt Achieve / Eric Curts | His October 2026 resource roundup invites recommendations and discusses learning about tools from creators. See the expanded outreach report. | Public Connect page: https://www.controlaltachieve.com/p/connect.html. Current resource invitation: https://www.controlaltachieve.com/2026/10/LOTW261012.html. Coverage is discretionary. | Tailored pitch below; not sent |
 | 5 | Product Hunt | A broad maker audience can try the example and install the released extension. Less specific than reaching recurring-meeting organizers. | Personal account; new accounts must complete onboarding. Self-hunting is supported. Submit a direct product URL. | Fields below; not submitted |
 
 Evidence that a publisher covered a relevant topic is evidence of fit only. It does not
 mean they are accepting pitches, promising coverage, or endorsing this project. No private
 email addresses or inferred recipient identities are included.
 
-## Show HN: ready to submit after deployment
+## Show HN: draft ready; site deployed
 
 Title: Show HN: A Google Slides timer that reallocates time between presenters
 
