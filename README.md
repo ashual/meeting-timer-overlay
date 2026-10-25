@@ -5,7 +5,8 @@ Mark each speaker's first slide, set the meeting time, and present as usual. The
 sections automatically and gives each presenter a fair share of the time left.
 
 **[Add to Chrome — free](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc)** ·
-[Setup guide](#running-a-meeting) ·
+[Try the interactive demo](https://ashual.github.io/meeting-timer-overlay/demo.html) ·
+[Setup guide](https://ashual.github.io/meeting-timer-overlay/setup.html) ·
 [Weekly-update template](docs/downloads/weekly-team-update.pptx)
 
 Built for weekly engineering updates, research lab meetings, and team demos using one shared

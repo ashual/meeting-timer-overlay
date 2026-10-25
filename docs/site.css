@@ -6,6 +6,34 @@
   --line:#d6dfda;
   --wash:#eaf0e8
 }
+.demo-setup,.demo-controls,.demo-scenarios {display:flex;gap:14px;flex-wrap:wrap;align-items:end;margin:24px 0}
+.demo-setup label {display:grid;gap:6px;font-size:14px;font-weight:650}
+button,input,select {font:inherit}
+button {cursor:pointer;border:1px solid var(--line);border-radius:7px;background:white;color:var(--ink);padding:12px 16px;font-size:15px}
+button.button {border-color:var(--teal);gap:12px}
+button:disabled {opacity:.45;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible {outline:3px solid #c16716;outline-offset:4px}
+input,select {border:1px solid var(--line);background:white;color:var(--ink);padding:10px;border-radius:5px;max-width:100%;min-width:0}
+.demo-setup input {width:180px}
+.demo-grid {display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.demo-card,.demo-queue {padding:28px;border:1px solid var(--line);border-radius:14px}
+.demo-card {background:var(--ink);color:white}
+.demo-card .eyebrow,.demo-card .meta {color:#b7e4d5}
+.demo-card h2 {margin:0;font-size:32px}
+.demo-countdown {font-size:82px;letter-spacing:-4px;line-height:1.1;font-weight:700;margin-top:24px;overflow-wrap:anywhere}
+.demo-card[data-phase="wrapup"] .demo-countdown {color:#ffce83;font-size:54px}
+.demo-card[data-phase="over"] .demo-countdown {color:#ffacac}
+.demo-card[data-phase="done"] .demo-countdown {font-size:64px}
+.demo-stats {display:grid;grid-template-columns:1fr 1fr;gap:16px;font-variant-numeric:tabular-nums}
+.demo-stats dt,.demo-stats p {font-size:13px;margin:16px 0 4px}
+.demo-stats dd {color:inherit;font-size:23px}
+.demo-stats strong {font-size:28px}
+.demo-queue ol {list-style:none;padding:0;margin-top:28px}
+.demo-queue li {padding:10px 12px;border-radius:6px;margin:6px 0;font-size:15px}
+.demo-queue [data-state="current"] {background:var(--wash);font-weight:750}
+.demo-queue [data-state="done"] {color:var(--muted)}
+#share-link {width:100%}
+@media(max-width:600px) {.demo-grid{grid-template-columns:1fr}.demo-card,.demo-queue{padding:22px}.demo-controls button{flex:1 1 42%}.demo-countdown{font-size:72px}}
 * {
   box-sizing:border-box
 }

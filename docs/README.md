@@ -1,14 +1,15 @@
 # Project website
 
 Buildless static HTML/CSS. Serve this directory with any static web server. No external
-fonts, client JavaScript, analytics, cookies, package installation, or build step.
+fonts, analytics, cookies, package installation, or build step. The optional interactive
+demo uses local JavaScript; the other pages work without it.
 The screenshots are copies of the repository-rendered examples in `store/assets/`, not
 independent user reports. Update them when the product visuals change.
 
 ## Publish with GitHub Pages
 
 Intended URL: `https://ashual.github.io/meeting-timer-overlay/`.
-It is the canonical and Open Graph URL in the four pages and in `sitemap.xml`.
+It is the canonical and Open Graph URL in all six pages and in `sitemap.xml`.
 Before using another host or custom domain, update every absolute site URL consistently.
 
 After the PR is merged, in the repository's **Settings → Pages** choose **Deploy from a
@@ -17,7 +18,7 @@ This PR does not change repository Pages settings or publish the website itself.
 
 Once the website actually responds at its intended public URL:
 
-1. Check all four pages, the images, and the PPTX download on the deployed site.
+1. Check all six pages, the images, and the PPTX download on the deployed site.
 2. Set the GitHub About homepage and the Chrome Web Store homepage to that URL.
 3. Verify this URL-prefix property in Google Search Console. For the HTML-file verification
    method, add the exact supplied verification file to this directory, then publish it.
@@ -47,3 +48,13 @@ References checked 26 October 2026:
 - `assets/` holds product examples and the extension icon. Keep source images unchanged when
   copying them here, and retain captions identifying illustrative meeting content.
 - Run `npm run check:site` from the repository root before committing website edits.
+
+## Interactive demo
+
+- `demo.html` and `demo.js` provide a click-driven simulation; they do not connect to Slides.
+- `timer-model.js` is a verbatim copy of `extension/src/schedule.js`. After changing the
+  extension schedule model, copy it here too. `check:site` verifies they match.
+- The demo uses no network calls, browser storage, or analytics. Share links contain only
+  `minutes` (5–120) and `speakers` (2–8). They open a fresh example, not saved progress.
+- `weekly-team-meeting.html` provides a 30-minute example agenda with a 22-minute
+  presenter block. It includes a facilitator-controlled discussion buffer.

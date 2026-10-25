@@ -20,3 +20,13 @@ presenter had enough time. Request candid feedback after actual use.
 Website search measurements belong in a separate record: Search Console date range,
 indexed pages, relevant queries, impressions and clicks. Extension usage is not observable
 from Search Console. UTM parameters alone do not provide attribution.
+
+## 26 October 2026 implementation update
+
+- Original four website pages, sitemap, CSS and deck verified publicly reachable (HTTP 200).
+- Interactive timing simulation and a practical agenda guide prepared on a review branch.
+- Five distribution opportunities researched; two tailored editorial pitches drafted.
+- No social launch, directory submission, pitch delivery, Search Console verification,
+  measured installs, first-meeting results, or repeat-meeting results recorded.
+- First experiment after deployment: share the demo and invite a small batch of known
+  organizers to one meeting. Confirm actual use before expanding the audience.
