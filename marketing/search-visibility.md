@@ -30,8 +30,8 @@ These are intent hypotheses, not measured keyword volumes or promised rankings.
 
 | Search intent | Page | Useful original content |
 | --- | --- | --- |
-| Google Slides meeting timer | `/` | Product workflow, examples, installation, actual limitations |
-| How to add a Google Slides timer for multiple presenters | `/setup.html` | Scan, mark sections, schedule, sharing-surface checks and recovery |
+| Google Slides meeting timer for speakers and topics | `/` | Fixed meeting deadline, shared time awareness, speaker/topic sections, installation and limits |
+| How to time speakers and agenda topics in Google Slides | `/setup.html` | Scan, mark sections, schedule, sharing-surface checks and recovery |
 | Weekly team update slide template | `/weekly-update-template.html` | Editable PPTX plus import and per-browser setup instructions |
 | Try a meeting timer / remaining-time allocation | `/demo.html` | Working interactive model with early finish, overtime and custom setups |
 | 30-minute weekly team meeting agenda | `/weekly-team-meeting.html` | Specific 22-minute presenter block and a protected discussion buffer |

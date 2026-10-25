@@ -30,3 +30,14 @@ from Search Console. UTM parameters alone do not provide attribution.
   measured installs, first-meeting results, or repeat-meeting results recorded.
 - First experiment after deployment: share the demo and invite a small batch of known
   organizers to one meeting. Confirm actual use before expanding the audience.
+
+## Positioning update — 26 October 2026
+
+The maker clarified that the purpose is shared time awareness in any Google Slides meeting
+with multiple speakers or topics and a fixed end time. Team updates and research meetings
+are examples of fit, not the whole audience. See `positioning.md`.
+
+For future pilots, record the meeting type and whether sections represent speakers, topics,
+or both. Seek feedback across several meeting types, and ask whether people could see the
+time, whether transitions were easier, and which later agenda items were rushed or missed.
+These are proposed research questions; no new pilot results are being reported.

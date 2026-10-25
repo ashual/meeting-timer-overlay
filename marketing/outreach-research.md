@@ -7,7 +7,19 @@ and the available route; they are not measured conversion rates or promises of c
 The product site and demo are live. The first outreach batch can use them now; search indexing
 is not a prerequisite for sharing a working public URL.
 
-## Recommended first batch
+## Positioning and scope
+
+The product supports meetings with multiple speakers or topics and a fixed end time. Its
+purpose is shared time awareness and easier transitions before one topic consumes the agenda.
+A section can represent a speaker, a topic, or a discussion; several people do not need to
+present. The current extension uses Google Slides. See `positioning.md` for the full reference.
+
+These six leads are an initial Google Slides discovery batch, not a definition of the market.
+The next research batch should include facilitators, workshop hosts, trainers, event and panel
+moderators, community organizers, and board/committee administrators. No new named leads or
+contact routes in those groups have been verified in this document.
+
+## Recommended first batch within the researched shortlist
 
 1. **Eric Curts / Control Alt Achieve:** the strongest editorial lead found. His recent weekly
    resources post explicitly invites recommendations, and his contact page publishes an email.
@@ -24,10 +36,10 @@ No email addresses were inferred from names or domains.
 
 | Target | Evidence of fit | Public route checked | Readiness / proposed angle |
 | --- | --- | --- | --- |
-| **Eric Curts / Control Alt Achieve** | His 16 October 2026 resource roundup invites recommended resources and describes learning about tools from their creators. | `ericcurts@gmail.com`, published on his Connect page and the roundup itself. | **Ready for a resource recommendation.** Offer the shared-deck presenter workflow, with a classroom-use hypothesis clearly identified. |
+| **Eric Curts / Control Alt Achieve** | His 16 October 2026 resource roundup invites recommended resources and describes learning about tools from their creators. | `ericcurts@gmail.com`, published on his Connect page and the roundup itself. | **Ready for a resource recommendation.** Offer speaker/topic agenda pacing and shared time awareness; classroom use remains a hypothesis. |
 | **Find Extensions** | Its submission page explicitly invites published, maintained Chrome extensions for free editorial review. | `hello@find-extensions.com`; the official page says email is its only submission intake. | **Ready for directory submission.** Include extension name, store link, a two-sentence description and developer role. No guaranteed listing or review date. |
-| **24Slides / Present Better** | Its June 2026 Google Slides timer guide covers timer videos and extensions, matching the exact topic. | `info@24slides.com`, explicitly labeled General on the company contact page. | **Ready for a routing inquiry.** Ask whether the editorial team would consider a presenter-section example. General contact is not a verified editor inbox. |
-| **SlidesAI editorial team** | Its timer tutorial covers embedded countdowns and Slides Timer. The article identifies its author. | Official article and author page verified. A usable editorial email was not established; the footer's email is obfuscated in the retrieved page. | **Hold for routing.** Pitch a worked multi-presenter example as an addition to its existing guide. Do not invent an author email or treat product support as editorial intake. |
+| **24Slides / Present Better** | Its June 2026 Google Slides timer guide covers timer videos and extensions, matching the exact topic. | `info@24slides.com`, explicitly labeled General on the company contact page. | **Ready for a routing inquiry.** Ask whether the editorial team would consider a speaker/topic agenda example. General contact is not a verified editor inbox. |
+| **SlidesAI editorial team** | Its timer tutorial covers embedded countdowns and Slides Timer. The article identifies its author. | Official article and author page verified. A usable editorial email was not established; the footer's email is obfuscated in the retrieved page. | **Hold for routing.** Pitch a worked agenda-timing example as an addition to its existing guide. Do not invent an author email or treat product support as editorial intake. |
 | **Alice Keeler / Teacher Tech** | Her guide covers ClayCodes Slides Timer, including auto-advance. | Official contact page verified, but it primarily advertises professional services. No editorial submissions route was established. | **Hold for routing.** Explain the section-handoff use case and seek consideration only through a suitable channel. Do not book or pay for a workshop as outreach. |
 | **Oren Ellenbogen / Software Lead Weekly** | The publisher describes a leadership/team audience; issue 726 was published 23 October 2026. | Publisher's About page links the curator's public social account. No editorial submission inbox or open DM route was established. | **Hold for routing.** Lead with the practical meeting-agenda resource; the extension is supporting material. A warm introduction, if one exists, would fit better than a raw product pitch. |
 
@@ -45,12 +57,13 @@ Subject: A free shared-deck timer for your EdTech resource roundup
 Hi Eric,
 
 Your recent EdTech Links roundup invites resource recommendations and mentions hearing from
-tool creators. I built Meeting Timer Overlay, a free, open-source Chrome extension for several
-presenters sharing one Google Slides deck.
+tool creators. I built Meeting Timer Overlay, a free, open-source Chrome extension for meetings with multiple
+speakers or topics and a fixed end time, using Google Slides.
 
-Mark each speaker's first slide; the overlay follows section handoffs and divides the remaining
-time among presenters still waiting. It might fit group presentations or staff updates, though
-I haven't validated it in a classroom. It doesn't enforce equal airtime or advance slides.
+Mark speaker or topic section starts; the overlay makes the time left visible and recalculates
+the budget at each transition. It helps a facilitator see when to move the conversation on.
+It might fit lessons, activities, group presentations, or staff meetings, though I haven't
+validated classroom use. It doesn't interrupt anyone or enforce a limit.
 
 Try the timing rule without installing: https://ashual.github.io/meeting-timer-overlay/demo.html
 Source and install link: https://github.com/ashual/meeting-timer-overlay
@@ -68,8 +81,9 @@ Subject: Free directory submission: Meeting Timer Overlay
 Hi Find Extensions team,
 
 I'm the developer of Meeting Timer Overlay, a free, MIT-licensed Chrome extension for meetings
-where several presenters share one Google Slides deck. It switches speaker sections at marked
-slides and recalculates a share of the remaining meeting time at each handoff.
+with multiple speakers or topics and a fixed end time, using Google Slides. It keeps the
+time visible, follows marked agenda sections, and recalculates the remaining budget at
+each transition so participants can see when to move on.
 
 Chrome Web Store:
 https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc
@@ -88,15 +102,16 @@ Oron
 
 Recipient: info@24slides.com
 
-Subject: For Present Better: a multi-presenter Google Slides timer example
+Subject: For Present Better: a Google Slides timer for speakers and topics
 
 Hi 24Slides team,
 
 Could you route this to the Present Better editorial team if it fits?
 
 Your Google Slides clock-and-timer guide covers timer videos and extensions. I built a free,
-open-source extension for the shared-deck case: mark each speaker's first slide, then the timer
-switches sections and recalculates the remaining meeting budget at each handoff.
+open-source extension for meetings with multiple speakers or topics and a fixed end time.
+Mark speaker or topic sections; the timer shows the remaining budget so everyone can see
+when to move to the next presentation, discussion, or agenda item.
 
 Here's a short interactive example your editor can try without installing:
 https://ashual.github.io/meeting-timer-overlay/demo.html
@@ -108,15 +123,15 @@ Oron
 
 ## Draft 4 — SlidesAI editorial team (route not yet verified)
 
-Subject: A shared-deck example for your Google Slides timer tutorial
+Subject: An agenda-timing example for your Google Slides tutorial
 
 Hi SlidesAI editorial team,
 
 Your timer tutorial covers YouTube countdowns and the Slides Timer extension. I built Meeting
-Timer Overlay for meetings where several people share one deck: speaker-section changes start
-the next timer and recalculate a share of the time left.
+Timer Overlay for meetings with several speakers or topics and a fixed end time. It keeps
+the remaining budget visible and follows speaker or topic sections in Google Slides.
 
-Would you consider a multi-presenter example alongside your existing methods? The rule can be
+Would you consider a topic-led meeting example alongside your existing methods? The rule can be
 tried here: https://ashual.github.io/meeting-timer-overlay/demo.html
 Source and setup: https://github.com/ashual/meeting-timer-overlay
 
@@ -127,15 +142,16 @@ Oron
 
 ## Draft 5 — Alice Keeler (editorial route not yet verified)
 
-Subject: A presenter-section use case alongside your Slides Timer guide
+Subject: A speaker/topic use case alongside your Slides Timer guide
 
 Hi Alice,
 
 Your guide to ClayCodes Slides Timer explains countdowns and auto-advance. I built a free,
-open-source tool for several people presenting from one shared Google Slides deck. It follows
-marked speaker sections and recalculates the next person's share of the remaining meeting time.
+open-source tool for meetings with multiple speakers or topics and a fixed end time. It
+follows marked speaker or topic sections in Google Slides and makes the remaining time
+visible, so the facilitator and participants can see when to move on.
 
-It could be relevant to group presentations or staff updates; I haven't validated classroom use.
+It could fit lessons, training, group presentations, or staff meetings; classroom use is unvalidated.
 It doesn't auto-advance slides or guarantee equal airtime.
 
 You can try the rule without installing:
@@ -156,7 +172,8 @@ Software Lead Weekly focuses on building better teams. I put together a practica
 team-update agenda that reserves discussion time outside a five-presenter update block:
 https://ashual.github.io/meeting-timer-overlay/weekly-team-meeting.html
 
-I also built a free Google Slides timer to make the remaining presenter budget visible:
+I also built a free Google Slides timer for any meeting with multiple speakers or topics
+and a fixed end time. It makes the time visible so the room knows when to move on:
 https://ashual.github.io/meeting-timer-overlay/demo.html
 
 The guide is a proposed workflow, not a case study or a measured productivity claim. If it fits

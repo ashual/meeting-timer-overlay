@@ -1,17 +1,17 @@
-# A Google Slides timer that recalculates when the next presenter starts
+# A Google Slides timer that recalculates at each agenda transition
 
 Draft for the maker's technical blog or DEV account. Not published. The descriptions below
 come from the repository source, rather than a new live-meeting benchmark.
 
 ---
 
-The last presenter in a team update inherits whatever time everyone else leaves behind.
-A fixed countdown for each speaker makes the original plan visible, but it does not update
-that plan when someone finishes early or runs long.
+A meeting can have a fixed end time and still spend nearly all of it on one topic. The
+remaining speakers or agenda items inherit whatever time is left. A visible countdown makes
+that tradeoff easier for the room to see and helps the facilitator decide when to move on.
 
-I built Meeting Timer Overlay for meetings where several people share one Google Slides
-deck. You mark the first slide of each speaker's section and set the meeting start time and
-duration. When the slideshow reaches a marked slide, the extension starts that section's
+I built Meeting Timer Overlay for meetings with multiple speakers or topics and a fixed
+end time. A section can represent a speaker, a topic, a discussion, or a combination. In
+Google Slides, mark the first slide of each section and set the meeting start and duration. When the slideshow reaches a marked slide, the extension starts that section's
 countdown and recalculates its share of the remaining time.
 
 ## The allocation model
@@ -78,7 +78,9 @@ own browser. That is why the reusable weekly-update deck includes a separate set
 ## Try it in one real meeting
 
 The extension is free and MIT licensed. If you run a recurring shared-deck update, I would like
-to hear where setup gets awkward and whether the remaining-time rule fits how your team works.
+to hear where setup gets awkward and whether the remaining-time rule makes transitions easier in your meeting.
+Workshops, panels, board meetings, lessons, and team updates are all possible use cases when
+Google Slides provides the agenda sections; no adoption in those settings is being claimed.
 
 - Install: https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc
 - Source and setup: https://github.com/ashual/meeting-timer-overlay

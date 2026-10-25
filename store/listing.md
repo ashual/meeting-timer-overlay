@@ -23,12 +23,18 @@ Upload `dist/meeting-timer-overlay-<version>.zip` from `npm run build`.
 
 > A calm, fair turn timer for Google Slides meetings: splits the time left evenly and shows whose turn it is.
 
+**Proposed summary for a future package release** (120 characters; not yet in the manifest):
+
+> Google Slides meeting timer for speakers and topics. Make time visible, share the time left, and keep the agenda moving.
+
 **Description** (max 16,000; plain text):
 
 ```text
-A free Google Slides meeting timer for weekly team updates, research lab meetings, and team demos.
+A free Google Slides meeting timer for any meeting with multiple speakers or topics and a fixed end time. Make the time visible so everyone knows when to wrap up and move on.
 
-Meeting Timer Overlay adds a small, calm card to the corner of your Google Slides presentation. It shows a countdown for whoever is presenting and the list of everyone who's up, so the whole room can see whose turn it is and how much time is left. Mark the slide where each speaker starts. The timer switches sections automatically and gives each presenter a fair share of the time left.
+Meeting Timer Overlay adds a small, calm card to the corner of your Google Slides presentation. It shows the current section's countdown and the sections still waiting, so the whole room can see the time left for the agenda. Mark the first slide of each speaker or topic. The timer follows those sections and recalculates a share of the remaining meeting time at each transition.
+
+Use it for workshops, panels, board or committee meetings, lessons, training sessions, team updates, and other meetings that use Google Slides. One person can lead several topics, several people can speak, or you can mix both. The goal is shared time awareness and easier transitions before one section consumes the whole meeting.
 
 HOW THE TIME IS SPLIT
 Every section gets an equal share of the time that's actually left when it begins:
@@ -44,7 +50,7 @@ WHAT YOU SEE
 • A see-through design that stays readable on light, dark, or busy slides.
 
 IT FOLLOWS YOUR SLIDES
-You never touch the timer during the meeting. Tick the slide where each person's part starts; when you reach that slide, their turn begins. Detail slides in between belong to the current person, going back through slides leaves the turn as it is, and jumping ahead marks skipped sections as done. Alt+Shift+P returns to the previous section and recalculates the time left.
+Tick the slide where each speaker or topic starts; reaching it starts the section. Detail slides in between stay in that section. Going back through slides leaves the section as it is, and jumping ahead marks skipped sections as done. For discussion-led agendas, move to the next topic's slide or use the manual next-section control when the discussion moves on. Alt+Shift+P returns to the previous section and recalculates the time left.
 
 SETUP
 1. Open your deck and click the extension icon.
@@ -59,7 +65,7 @@ MADE FOR PRESENTING
 • Optional shortcuts: Alt+Shift+N advances to the next section, Alt+Shift+P returns to the previous section and recalculates the time left, Alt+Shift+O shows or hides the overlay.
 
 WORKFLOW LIMITS
-Shares remaining time rather than guaranteeing equal total airtime. An early overrun leaves less time for later speakers. The timer does not enforce a speaking limit.
+Shares remaining time rather than guaranteeing equal total airtime. An early overrun leaves less time for later speakers or topics. The timer does not enforce a limit or interrupt a discussion; it helps the facilitator and participants see when to move on.
 Runs on Google Slides in desktop Chrome, including fullscreen. The separate speaker-notes window is excluded. There is no native Zoom or Google Meet integration.
 
 FREE AND OPEN SOURCE
@@ -95,7 +101,7 @@ The marquee tile is optional; it's only used if the store features the extension
 ### Additional fields
 
 - **Official URL:** leave as "None" unless you verify a domain in Google Search Console.
-- **Homepage URL:** `https://github.com/ashual/meeting-timer-overlay` until the project website is deployed. Then use `https://ashual.github.io/meeting-timer-overlay/`.
+- **Homepage URL:** `https://ashual.github.io/meeting-timer-overlay/` (live).
 - **Support URL:** the repository's issues page.
 - **Mature content:** No.
 
@@ -103,7 +109,7 @@ The marquee tile is optional; it's only used if the store features the extension
 
 **Single purpose description:**
 
-> Meeting Timer Overlay shows a fair turn timer and the list of presenters on top of a Google Slides presentation during a meeting, splitting the remaining meeting time evenly between the sections that are left.
+> Meeting Timer Overlay shows a section timer and the list of upcoming speakers or topics on top of a Google Slides presentation during a meeting, splitting the remaining meeting time evenly between the sections that are left.
 
 **Permission justifications:**
 
