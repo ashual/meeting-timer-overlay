@@ -41,3 +41,16 @@ For future pilots, record the meeting type and whether sections represent speake
 or both. Seek feedback across several meeting types, and ask whether people could see the
 time, whether transitions were easier, and which later agenda items were rushed or missed.
 These are proposed research questions; no new pilot results are being reported.
+
+## Expanded outreach preparation — 25 October 2026
+
+Eight additional organizations researched, bringing the two outreach reports to 14. The new
+report covers workshop facilitators, trainers, panel moderators, speaking communities, and
+nonprofit board organizers. It contains eight tailored draft/outline packages, published
+routes with readiness limits, pilot questions, a follow-up draft, and a status table.
+See [outreach-expanded.md](outreach-expanded.md).
+
+No pitches, comments, directory submissions, membership applications, or messages were sent.
+The two unresolved contact routes remain on hold. Training Industry is an outline-only
+opportunity requiring an author-written contribution under its editorial rules. No acquisition
+or usage results have been observed from this preparation.

@@ -15,9 +15,10 @@ A section can represent a speaker, a topic, or a discussion; several people do n
 present. The current extension uses Google Slides. See `positioning.md` for the full reference.
 
 These six leads are an initial Google Slides discovery batch, not a definition of the market.
-The next research batch should include facilitators, workshop hosts, trainers, event and panel
-moderators, community organizers, and board/committee administrators. No new named leads or
-contact routes in those groups have been verified in this document.
+The [expanded outreach report](outreach-expanded.md) adds eight organizations serving
+facilitators, workshop hosts, trainers, panel moderators, speaking communities, and nonprofit
+boards. It includes channel-specific drafts, verified public routes, and explicit routing holds.
+Together the two reports cover 14 organizations; none has been contacted.
 
 ## Recommended first batch within the researched shortlist
 

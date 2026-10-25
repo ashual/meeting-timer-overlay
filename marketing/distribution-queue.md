@@ -2,8 +2,9 @@
 
 Prepared 26 October 2026. These are researched opportunities and ready-to-use drafts, not
 completed submissions or endorsements. Nothing has been sent. The demo and agenda are live, and Search Console ownership is verified.
-See [outreach-research.md](outreach-research.md) for the expanded six-target editorial/directory
-shortlist, verified contact routes, current evidence, and tailored drafts.
+See [outreach-research.md](outreach-research.md) for the original six editorial/directory targets
+and [outreach-expanded.md](outreach-expanded.md) for eight additional organizations, channel-specific
+pitches, contact routes, editorial requirements, pilot asks, follow-ups, and a tracking table.
 Product positioning: [positioning.md](positioning.md). The core audience is any meeting with
 multiple speakers or topics and a fixed end time, using Google Slides; these channels are
 an initial discovery batch.
@@ -16,7 +17,11 @@ an initial discovery batch.
 3. Run one real meeting; confirm the store build and capture a real walkthrough.
 4. Publish the maker's LinkedIn post and Show HN while the maker can answer questions.
 5. Submit AlternativeTo; treat its review queue separately from publication.
-6. Try two relevant editorial pitches. Product Hunt is optional after pilot feedback.
+6. After sending is authorized, begin with explicit resource invitations: Eric Curts,
+   Find Extensions, Facilitator School, and SessionLab. Check live form/comment requirements;
+   use one route per organization. General routing inquiries follow. Editorial proposals and
+   unresolved contacts stay on hold as documented in the expanded report. Product Hunt is
+   optional after pilot feedback.
 
 Prioritize organizer feedback over launch votes. No paid placements, hunters, ads, or
 submission fees are included. If any route requires payment, skip it.
@@ -159,9 +164,9 @@ Your countdown-timer guide covers free timers that work with Google tools. I bui
 open-source extension for a specific related situation: multiple speakers or topics moving through one
 Google Slides agenda with a fixed end time.
 
-The timer follows marked speaker sections. At each handoff it divides the time left among
-presenters still waiting, so an early finish gives the next people more time and an overrun
-leaves them less. It doesn't enforce a speaking limit or auto-advance slides.
+The timer follows marked speaker or topic sections. At each transition it divides the time
+left among the sections remaining, so an early finish leaves more time for later items and
+an overrun leaves less. It doesn't enforce a limit or auto-advance slides.
 
 Here's a no-install simulation of that rule:
 https://ashual.github.io/meeting-timer-overlay/demo.html
