@@ -2,7 +2,8 @@
 
 Routes checked 25 October 2026. Eight additional organizations bring the researched list to
 14, including the [original six](outreach-research.md). These are researched opportunities and
-drafts, not contacts made, endorsements, or validated customer segments. Nothing has been sent.
+drafts, not endorsements or validated customer segments. Execution began on 26 October 2026;
+see [outreach-status.md](outreach-status.md) for the authoritative action record and receipts.
 Rankings reflect audience fit and route quality, not measured conversion rates.
 
 ## Message to carry across every channel
@@ -21,11 +22,11 @@ organizers already using a shared Slides deck. Keep long breaks or deliberately 
 agenda blocks outside a timed block when the equal-share model is unsuitable. The interactive
 demo is a click-driven simulation of the rule, not the actual extension connected to Slides.
 
-## New targets and verified routes
+## Initial research snapshot — routes and proposed next steps
 
-Public pages and visible form fields were reviewed. No form was submitted; delivery, login
-requirements, moderation, and actual form acceptance were not tested. No fees or placements
-are assumed. Skip any paid route under the zero-spend plan.
+Public pages and visible form fields were reviewed. Subsequent form attempts and sends are
+recorded in the status table below. Delivery and placement are not assumed. Skip any paid
+route under the zero-spend plan.
 
 | Order | Organization / audience | Public route | Next step / status |
 | --- | --- | --- | --- |
@@ -246,11 +247,11 @@ Subject: Who reviews practical resources for board-meeting agenda pacing?
 If fit is weak, close the lead. Do not claim the tool supplies governance guidance or replace
 the board's agreed agenda priorities with equal allocations.
 
-## Draft 14 — Facilitation Lab resource-permission inquiry, on hold
+## Draft 14 — Original Facilitation Lab inquiry (superseded)
 
-Route to resolve: an appropriate community host or editorial contact linked from
-https://voltagecontrol.com/facilitation-lab/. No suitable inbox has been established.
-The consultation form is for service inquiries, not this request.
+A resource-suggestion route was subsequently verified at hello@voltagecontrol.com and a
+tailored email was sent on 26 October. See outreach-status.md. The original proposed copy
+below is retained for context and must not be resent.
 
 Subject: Is there a suitable place for a Slides agenda-timing resource?
 
@@ -304,7 +305,7 @@ Short feedback-request draft:
 
 ## Follow-up and tracking
 
-Nothing is scheduled. Once sending is explicitly authorized, use one route per organization
+Nothing is scheduled. Sending is authorized; check outreach-status.md before using one route per organization
 and record actual dates. For a general inquiry, one brief follow-up after 7–10 business days
 may be reasonable if the recipient has no different policy. Avoid chasing moderated comments
 or directory queues. For Toastmasters, respect 4–6 weeks; for other editorial submissions,
@@ -318,14 +319,14 @@ General inquiry follow-up draft:
 
 | Lead | Current state | Sent date | Reply / published link | First / repeat meeting |
 | --- | --- | --- | --- | --- |
-| Facilitator School | Suggestion draft; live form inspection pending | Not sent | Unknown | Unknown / unknown |
-| SessionLab | Invited-comment draft; rules/fields check pending | Not sent | Unknown | Unknown / unknown |
-| Facilitator.com | General routing draft | Not sent | Unknown | Unknown / unknown |
-| Powerful Panels | General contact draft | Not sent | Unknown | Unknown / unknown |
+| Facilitator School | Airtable attempted; reset without a receipt; acceptance unconfirmed | 2026-10-26 | Unknown | Unknown / unknown |
+| SessionLab | Comment submitted; awaiting moderation | 2026-10-26 | Not yet published | Unknown / unknown |
+| Facilitator.com | Something else inquiry submitted; receipt confirmed | 2026-10-26 | Unknown | Unknown / unknown |
+| Powerful Panels | Email sent to officially published contact; verified in Gmail | 2026-10-26 | Unknown | Unknown / unknown |
 | Training Industry | Outline only; author-written proposal needed | Not sent | Unknown | Unknown / unknown |
 | Toastmaster magazine | Form/expertise/source preparation needed | Not sent | Unknown | Unknown / unknown |
 | BoardSource | Hold: usable editorial route unresolved | Not sent | Unknown | Unknown / unknown |
-| Facilitation Lab | Hold: appropriate host route unresolved | Not sent | Unknown | Unknown / unknown |
+| Facilitation Lab / Voltage Control | Resource-suggestion email sent through published intake | 2026-10-26 | Unknown | Unknown / unknown |
 
 Keep private replies and organizer identities out of this public repository. Report aggregate
 observations in [experiment-log.md](experiment-log.md). A listing, mention, site visit, install,
