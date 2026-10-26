@@ -50,7 +50,22 @@ nonprofit board organizers. It contains eight tailored draft/outline packages, p
 routes with readiness limits, pilot questions, a follow-up draft, and a status table.
 See [outreach-expanded.md](outreach-expanded.md).
 
-No pitches, comments, directory submissions, membership applications, or messages were sent.
-The two unresolved contact routes remain on hold. Training Industry is an outline-only
+At that preparation stage, no sends or submissions had been recorded. Training Industry is an outline-only
 opportunity requiring an author-written contribution under its editorial rules. No acquisition
 or usage results have been observed from this preparation.
+
+## Outreach execution — 26 October 2026
+
+- Found and read three existing outreach emails in Gmail Sent: Eric Curts, Find Extensions,
+  and 24Slides. Did not resend them. Their earlier speaker-focused bodies differ from the
+  broader prepared drafts.
+- Sent two new tailored emails from the maker's existing Gmail sender identity: Powerful
+  Panels and Voltage Control. Verified Sent labels; recipient delivery and reading are unknown.
+- Facilitator.com confirmed receipt of a general inquiry through its Something else form.
+- SessionLab accepted the invited tool-suggestion comment for moderation. It is not recorded
+  as a public mention or coverage.
+- Facilitator School's linked Airtable suggestion form reset after Submit without a visible
+  receipt. Recorded as attempted and unconfirmed, with no blind resubmission.
+- Saved [current statuses and receipts](outreach-status.md). No follow-up or recurring monitor
+  is scheduled. No publisher response, attributed install, first-meeting use, or repeat use
+  is established by these outreach actions.
