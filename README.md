@@ -1,4 +1,4 @@
-# Meeting Timer Overlay
+# Meeting Timer for Google Slides
 
 A free, open-source Chrome extension for Google Slides meetings with multiple speakers or
 topics and a fixed end time. Keep the time visible so everyone knows when to wrap up and
@@ -71,7 +71,7 @@ starts. Times always come from the wall clock, so a throttled background tab nev
 
 ## Install
 
-**From the Chrome Web Store:** [Install Meeting Timer Overlay](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc).
+**From the Chrome Web Store:** [Install Meeting Timer for Google Slides](https://chromewebstore.google.com/detail/meeting-timer-overlay/cdllfbfpncendlekbbaepmmohdcciihc).
 
 **From source** (no build step):
 
@@ -301,7 +301,7 @@ Users get the update automatically within a few hours of approval.
 
 ## License
 
-[MIT](LICENSE). Meeting Timer Overlay is an independent project and isn't affiliated with or
+[MIT](LICENSE). Meeting Timer for Google Slides is an independent project and isn't affiliated with or
 endorsed by Google. Google Slides is a trademark of Google LLC.
 
 ## Project website

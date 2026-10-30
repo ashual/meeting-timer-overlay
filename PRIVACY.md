@@ -2,7 +2,7 @@
 
 _Last updated: October 24, 2026_
 
-Meeting Timer Overlay ("the extension") is a Chrome extension that shows a turn timer and a
+Meeting Timer for Google Slides ("the extension") is a Chrome extension that shows a turn timer and a
 list of sections on top of Google Slides presentations. This policy explains what data the
 extension handles and what it does with it.
 
