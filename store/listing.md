@@ -3,9 +3,8 @@
 Copy-paste source for every field in the
 [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
 
-**Editing this file does not update the public store listing.** Publish approved copy through
-the dashboard after checking it against the installed store build. The manifest summary
-remains unchanged in this documentation update.
+**Editing this file does not update the public store listing.** Upload the 1.2.1 package and publish the listing through the dashboard.
+The manifest supplies the new name and short description. Dashboard publication is a separate step.
 
 Fields are listed in the order the dashboard shows them. Character limits are the store's.
 
@@ -17,65 +16,58 @@ Upload `dist/meeting-timer-overlay-<version>.zip` from `npm run build`.
 
 ### Product details
 
-**Title** (from the manifest, max 75): `Meeting Timer Overlay`
+**Title** (from the manifest, max 75): `Meeting Timer for Google Slides`
 
-**Summary** (from the manifest, max 132):
+**Tagline** (marketing copy; included in the detailed description):
 
-> A calm, fair turn timer for Google Slides meetings: splits the time left evenly and shows whose turn it is.
+> Keep time. Keep the agenda moving.
 
-**Proposed summary for a future package release** (120 characters; not yet in the manifest):
+**Summary / short description** (from the manifest, 72 characters):
 
-> Google Slides meeting timer for speakers and topics. Make time visible, share the time left, and keep the agenda moving.
+> Make time visible for every speaker and topic, and know when to move on.
 
 **Description** (max 16,000; plain text):
 
 ```text
-A free Google Slides meeting timer for any meeting with multiple speakers or topics and a fixed end time. Make the time visible so everyone knows when to wrap up and move on.
+Keep time. Keep the agenda moving.
 
-Meeting Timer Overlay adds a small, calm card to the corner of your Google Slides presentation. It shows the current section's countdown and the sections still waiting, so the whole room can see the time left for the agenda. Mark the first slide of each speaker or topic. The timer follows those sections and recalculates a share of the remaining meeting time at each transition.
+Meeting Timer for Google Slides is a free, open-source Chrome extension for meetings with multiple speakers or topics and a fixed end time. Make time visible so everyone knows when to wrap up and move on.
 
-Use it for workshops, panels, board or committee meetings, lessons, training sessions, team updates, and other meetings that use Google Slides. One person can lead several topics, several people can speak, or you can mix both. The goal is shared time awareness and easier transitions before one section consumes the whole meeting.
+A section can be a presentation, agenda topic, exercise, or discussion. One person can lead several topics, several people can speak within one topic, or you can mix both. Use it for workshops, panels, lessons, training sessions, board and community meetings, team updates, and other meetings already using Google Slides.
 
-HOW THE TIME IS SPLIT
-Every section gets an equal share of the time that's actually left when it begins:
-time for this section = time left in the meeting / sections left.
-With 22 minutes left and 5 people, the first person gets 4.4 minutes. If they finish after 2 minutes, the next person gets 20 / 4 = 5 minutes. Short updates give time back to everyone after them; long ones take it from the people still waiting, and the timer shows it.
+HOW IT WORKS
+1. Open your Google Slides presentation in desktop Chrome and click the extension icon.
+2. Scan the deck and mark the first slide of each speaker or topic section.
+3. Set the meeting start time and duration, then start the session.
+4. Present as usual. Reaching a marked slide switches the active section. Manual controls let you move between discussion topics while the slideshow is visible.
 
-WHAT YOU SEE
-• A whole-minute countdown, with no seconds ticking, so it never feels stressful.
-• Every section in slide order: finished ones are checked, the current one is highlighted, and upcoming ones wait.
-• How many sections are left.
-• When a turn runs out, a calm amber "Wrap up". More than a minute over, the extra minutes count with a minus sign, in red, fading slowly in and out.
-• After a few seconds without a slide change, the card shrinks to a slim strip with just the minutes, sections left, and progress dots. The next slide change brings it back.
-• A see-through design that stays readable on light, dark, or busy slides.
+SHARED TIME AWARENESS
+The overlay shows a whole-minute countdown and the upcoming section queue. At each transition, it divides the remaining meeting budget among the sections left. With 22 minutes and five sections remaining, the first allocation is 4.4 minutes. Finishing after two minutes leaves 20 minutes for four sections: five minutes each. Taking seven minutes leaves 15 minutes for four sections: 3.75 minutes each.
 
-IT FOLLOWS YOUR SLIDES
-Tick the slide where each speaker or topic starts; reaching it starts the section. Detail slides in between stay in that section. Going back through slides leaves the section as it is, and jumping ahead marks skipped sections as done. For discussion-led agendas, move to the next topic's slide or use the manual next-section control when the discussion moves on. Alt+Shift+P returns to the previous section and recalculates the time left.
+Early finishes leave more time for later items; overruns leave less. The facilitator decides when to move on. The timer does not interrupt anyone, enforce a limit, or guarantee equal total airtime. It suits comparable agenda blocks better than activities needing deliberately different fixed durations.
 
-SETUP
-1. Open your deck and click the extension icon.
-2. Click "Scan deck". Slide titles are listed for you, and hidden (skipped) slides are left out.
-3. Tick where each section starts, set the meeting's start time and duration, and click "Start session".
-4. Present as usual.
-Your setup is saved locally per presentation, so next week you rescan and adjust the start time. Another organizer or copied deck needs its own setup.
-
-MADE FOR PRESENTING
-• The overlay never takes focus or clicks: keep clicking or using arrow keys to change slides.
-• Works in fullscreen slideshows.
-• Optional shortcuts: Alt+Shift+N advances to the next section, Alt+Shift+P returns to the previous section and recalculates the time left, Alt+Shift+O shows or hides the overlay.
+PRESENTATION FEATURES
+• Visible countdown and section queue over your Google Slides presentation.
+• Compact display after inactivity, with the fuller view returning on slide changes.
+• Wrap-up and overtime indicators.
+• Fullscreen slideshow support.
+• Manual section navigation and optional keyboard shortcuts: Alt+Shift+N for next section, Alt+Shift+P for previous section, and Alt+Shift+O to show or hide the overlay.
+• Per-presentation setup saved locally in your browser.
 
 WORKFLOW LIMITS
-Shares remaining time rather than guaranteeing equal total airtime. An early overrun leaves less time for later speakers or topics. The timer does not enforce a limit or interrupt a discussion; it helps the facilitator and participants see when to move on.
-Runs on Google Slides in desktop Chrome, including fullscreen. The separate speaker-notes window is excluded. There is no native Zoom or Google Meet integration.
+Requires Google Slides in desktop Chrome. It is not a standalone overlay for arbitrary applications, and it has no native Google Meet or Zoom integration. The separate speaker-notes window is excluded. It does not detect who is speaking, automatically advance slides, or synchronize setup between organizers. Each browser or copied presentation needs its own setup.
 
 FREE AND OPEN SOURCE
-MIT licensed. Source and support: https://github.com/ashual/meeting-timer-overlay
+Free to use. MIT licensed. No separate account, advertising, or developer analytics backend.
+Try the timing-rule simulation: https://ashual.github.io/meeting-timer-overlay/demo.html
+Setup and installation: https://ashual.github.io/meeting-timer-overlay/
+Source and support: https://github.com/ashual/meeting-timer-overlay
 
 PRIVACY
-No separate accounts, developer backend, advertising, or analytics. Slide titles and settings stay in local browser storage. Scanning fetches views of your open deck from docs.google.com using your existing Google session.
+Slide titles and settings stay in local browser storage. Scanning requests views of your open presentation from docs.google.com using your existing Google session.
 Privacy policy: https://github.com/ashual/meeting-timer-overlay/blob/main/PRIVACY.md
 
-Meeting Timer Overlay is an independent project and isn't affiliated with or endorsed by Google. Google Slides is a trademark of Google LLC.
+Previously named Meeting Timer Overlay. This is an independent project and is not affiliated with or endorsed by Google. Google Slides is a trademark of Google LLC.
 ```
 
 **Category:** `Workflow & Planning` (under Productivity)
@@ -109,7 +101,7 @@ The marquee tile is optional; it's only used if the store features the extension
 
 **Single purpose description:**
 
-> Meeting Timer Overlay shows a section timer and the list of upcoming speakers or topics on top of a Google Slides presentation during a meeting, splitting the remaining meeting time evenly between the sections that are left.
+> Meeting Timer for Google Slides shows a section timer and the list of upcoming speakers or topics on top of a Google Slides presentation during a meeting, splitting the remaining meeting time evenly between the sections that are left.
 
 **Permission justifications:**
 

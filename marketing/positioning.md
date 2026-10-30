@@ -5,9 +5,9 @@ website copy, listing drafts, launch posts, outreach, and future growth experime
 
 ## Core purpose
 
-**Make time visible. Keep the agenda moving.**
+**Keep time. Keep the agenda moving.**
 
-Meeting Timer Overlay is a free, open-source Google Slides timer for meetings with multiple
+Meeting Timer for Google Slides is a free, open-source Google Slides timer for meetings with multiple
 speakers or topics and a fixed end time. It helps everyone see the remaining time and
 understand when to move to the next presentation, conversation, or agenda item.
 
@@ -82,3 +82,9 @@ The weekly-update deck and team-meeting guide remain useful examples. Label them
 and test additional topic-led workflows instead of making all acquisition depend on weekly
 team updates. Ask pilot organizers whether timing was visible and whether transitions were
 easier, along with which later agenda items were rushed or missed.
+
+## Rename — 30 October 2026
+
+Product name: Meeting Timer for Google Slides. Tagline: Keep time. Keep the agenda moving.
+Short description: Make time visible for every speaker and topic, and know when to move on.
+Repository and existing page URLs stay unchanged so existing links continue to work.
