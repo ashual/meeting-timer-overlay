@@ -22,16 +22,16 @@ Upload `dist/meeting-timer-overlay-<version>.zip` from `npm run build`.
 
 > Keep time. Keep the agenda moving.
 
-**Summary / short description** (from the manifest, 72 characters):
+**Summary / short description** (from the manifest, 89 characters):
 
-> Make time visible for every speaker and topic, and know when to move on.
+> Make time visible for every speaker and topic in Google Slides, and know when to move on.
 
 **Description** (max 16,000; plain text):
 
 ```text
-Keep time. Keep the agenda moving.
+Meeting Timer for Google Slides is a free, open-source Chrome extension that puts a countdown over your presentation, so everyone can see when to wrap up and move on. Mark the first slide of each speaker or topic, set the start time and duration, and present as usual.
 
-Meeting Timer for Google Slides is a free, open-source Chrome extension for meetings with multiple speakers or topics and a fixed end time. Make time visible so everyone knows when to wrap up and move on.
+Keep time. Keep the agenda moving.
 
 A section can be a presentation, agenda topic, exercise, or discussion. One person can lead several topics, several people can speak within one topic, or you can mix both. Use it for workshops, panels, lessons, training sessions, board and community meetings, team updates, and other meetings already using Google Slides.
 
