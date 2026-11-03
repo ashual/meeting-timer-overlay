@@ -3,7 +3,7 @@
 Copy-paste source for every field in the
 [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
 
-**Editing this file does not update the public store listing.** Upload the 1.2.1 package and publish the listing through the dashboard.
+**Editing this file does not update the public store listing.** Upload the 1.2.2 package and publish the listing through the dashboard.
 The manifest supplies the new name and short description. Dashboard publication is a separate step.
 
 Fields are listed in the order the dashboard shows them. Character limits are the store's.

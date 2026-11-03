@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Meeting Timer for Google Slides",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Make time visible for every speaker and topic in Google Slides, and know when to move on.",
   "minimum_chrome_version": "102",
   "icons": {

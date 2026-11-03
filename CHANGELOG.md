@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 (2026-11-03)
+
+- Store summary now says "in Google Slides". No change to how the timer works.
+
 ## 1.2.0 (2026-10-25)
 
 - `Alt+Shift+P` returns to the previous section and splits the time still left across the
