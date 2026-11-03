@@ -86,5 +86,5 @@ easier, along with which later agenda items were rushed or missed.
 ## Rename — 30 October 2026
 
 Product name: Meeting Timer for Google Slides. Tagline: Keep time. Keep the agenda moving.
-Short description: Make time visible for every speaker and topic, and know when to move on.
+Short description: Make time visible for every speaker and topic in Google Slides, and know when to move on.
 Repository and existing page URLs stay unchanged so existing links continue to work.
