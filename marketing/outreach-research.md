@@ -1,7 +1,8 @@
 # Outreach research — Meeting Timer Overlay
 
 Researched 26 October 2026. Six editorial/directory targets, with evidence, contact readiness,
-and tailored drafts. Nothing has been sent. All rankings below are judgment about audience fit
+and tailored drafts. Current sends and holds are recorded in [outreach-status.md](outreach-status.md).
+The first three emails were found in Gmail Sent and were not resent. All rankings below are judgment about audience fit
 and the available route; they are not measured conversion rates or promises of coverage.
 
 The product site and demo are live. The first outreach batch can use them now; search indexing
@@ -18,7 +19,8 @@ These six leads are an initial Google Slides discovery batch, not a definition o
 The [expanded outreach report](outreach-expanded.md) adds eight organizations serving
 facilitators, workshop hosts, trainers, panel moderators, speaking communities, and nonprofit
 boards. It includes channel-specific drafts, verified public routes, and explicit routing holds.
-Together the two reports cover 14 organizations; none has been contacted.
+Together the two reports cover 14 organizations. See the execution record for actual contacts;
+drafts below are proposed copy, not a verbatim archive of the earlier sent messages.
 
 ## Recommended first batch within the researched shortlist
 
@@ -29,7 +31,8 @@ Together the two reports cover 14 organizations; none has been contacted.
 3. **24Slides editorial team:** a close article match and a verified general inbox. Begin with
    a routing request; there is no confirmed editorial submissions policy.
 
-These first three have a published email route. Alice Keeler, SlidesAI, and Software Lead
+These first three have a published email route and verified existing sends dated 26 October 2026.
+Alice Keeler, SlidesAI, and Software Lead
 Weekly are researched second-wave targets whose editorial route still needs confirmation.
 No email addresses were inferred from names or domains.
 
@@ -182,12 +185,12 @@ your editorial scope, would you consider the agenda resource for a future issue?
 
 Oron
 
-## Follow-through once sending is explicitly authorized
+## Follow-through after execution authorization
 
-- Start with Eric and Find Extensions. Add the 24Slides routing inquiry after checking the
-  sender account and ensuring the maker can respond to replies.
+- Eric, Find Extensions, and 24Slides are already in Sent. Await replies; do not resend.
+  Use [outreach-status.md](outreach-status.md) as the current queue.
 - Send each tailored message once. No automated bulk sending or follow-up sequence is set up.
-- If appropriate, consider one short follow-up after about a week; this is a proposed cadence,
+- If appropriate, consider one short follow-up after 7–10 business days; this is a proposed cadence,
   not a scheduled task. Stop after a decline or request not to follow up.
 - Log the actual send date, response, any published link, and any confirmed meeting pilot.
   Leave these unknown until observed. A newsletter mention alone does not establish installs.

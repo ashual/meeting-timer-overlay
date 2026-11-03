@@ -1,7 +1,8 @@
 # Free distribution queue
 
-Prepared 26 October 2026. These are researched opportunities and ready-to-use drafts, not
-completed submissions or endorsements. Nothing has been sent. The demo and agenda are live, and Search Console ownership is verified.
+Updated 26 October 2026. These are researched opportunities and proposed drafts; actual sends
+and submissions are tracked in [outreach-status.md](outreach-status.md). The demo and agenda
+are live, and Search Console ownership is verified. No endorsement is claimed.
 See [outreach-research.md](outreach-research.md) for the original six editorial/directory targets
 and [outreach-expanded.md](outreach-expanded.md) for eight additional organizations, channel-specific
 pitches, contact routes, editorial requirements, pilot asks, follow-ups, and a tracking table.
@@ -17,11 +18,10 @@ an initial discovery batch.
 3. Run one real meeting; confirm the store build and capture a real walkthrough.
 4. Publish the maker's LinkedIn post and Show HN while the maker can answer questions.
 5. Submit AlternativeTo; treat its review queue separately from publication.
-6. After sending is authorized, begin with explicit resource invitations: Eric Curts,
-   Find Extensions, Facilitator School, and SessionLab. Check live form/comment requirements;
-   use one route per organization. General routing inquiries follow. Editorial proposals and
-   unresolved contacts stay on hold as documented in the expanded report. Product Hunt is
-   optional after pilot feedback.
+6. Outreach execution is underway: five emails verified in Sent, one contact-form receipt,
+   and one comment awaiting moderation. Facilitator School's form attempt is unconfirmed.
+   Check [outreach-status.md](outreach-status.md) before any next send. Editorial preparation
+   and unresolved contacts remain on hold. Product Hunt is optional after pilot feedback.
 
 Prioritize organizer feedback over launch votes. No paid placements, hunters, ads, or
 submission fees are included. If any route requires payment, skip it.
@@ -33,7 +33,7 @@ submission fees are included. If any route requires payment, skip it.
 | 1 | Show HN | The open-source extension has a concrete implementation and an allocation tradeoff to discuss. The browser simulation reduces installation friction. | Submit at https://news.ycombinator.com/submit using a personal account. Explain the actual extension, disclose the simulation's scope, and be available to discuss it. Do not ask for votes. | Draft below; not submitted |
 | 2 | AlternativeTo | A directory entry can explain the speaker-or-topic workflow to people comparing timer software. | User menu → Suggest new application. Verified email required; entries go through moderation. Check for an existing entry before creating another. | Listing fields below; not submitted |
 | 3 | Teacher Tech / Alice Keeler | Her own guide covers ClayCodes Slides Timer and auto-advance, so a presenter-section timer is a specific adjacent use case. Classroom fit is a hypothesis, not validated. | Public contact page: https://alicekeeler.com/contact-me/. It is primarily a professional-services contact route, not a promise to review unsolicited software. Confirm editorial suitability before sending. | Tailored pitch below; not sent |
-| 4 | Control Alt Achieve / Eric Curts | His October 2026 resource roundup invites recommendations and discusses learning about tools from creators. See the expanded outreach report. | Public Connect page: https://www.controlaltachieve.com/p/connect.html. Current resource invitation: https://www.controlaltachieve.com/2026/10/LOTW261012.html. Coverage is discretionary. | Tailored pitch below; not sent |
+| 4 | Control Alt Achieve / Eric Curts | His October 2026 resource roundup invites recommendations and discusses learning about tools from creators. See the expanded outreach report. | Public Connect page: https://www.controlaltachieve.com/p/connect.html. Current resource invitation: https://www.controlaltachieve.com/2026/10/LOTW261012.html. Coverage is discretionary. | Existing send verified 26 October; await reply |
 | 5 | Product Hunt | A broad maker audience can try the example and install the released extension. Less specific than reaching recurring-meeting organizers. | Personal account; new accounts must complete onboarding. Self-hunting is supported. Submit a direct product URL. | Fields below; not submitted |
 
 Evidence that a publisher covered a relevant topic is evidence of fit only. It does not
